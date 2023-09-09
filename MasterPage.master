@@ -1,0 +1,27 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ONSTORE - Toko Online Indonesia - Belanja Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/mobileCSS.css" rel="Stylesheet" type="text/css" />
+    <link href="Styles/css/font-awesome.css" rel="Stylesheet" type="text/css" />
+    <link href="Styles/less/icons.less" rel="Stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />    
+    <script src="<%= resolveClientUrl("~") %>Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="<%= resolveClientUrl("~") %>Scripts/jquery-1.4.1.js" type="text/javascript"></script>        <link rel="shortcut icon" type="image/x-icon" href="https://images.onstore.co.id/i/newDesign/ONstore-logo-single.png" />    <link rel="stylesheet" type="text/css" href="styles/onMobile/mainStyle.css?v=20151111_115001" />  
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

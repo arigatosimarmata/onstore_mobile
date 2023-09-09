@@ -1,0 +1,1826 @@
+﻿/* Default styles that will carry to the child style sheet */
+
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+
+}
+
+input[type='text'], input[type='password'], input[type='button'], input[type='checkbox'], select {
+    -webkit-appearance: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+input[type='button']
+{
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+textarea {
+    resize: none;
+}
+
+/* .cekYes */
+.cekYes {
+  width: 20px;
+  position: relative;
+}
+.cekYes label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;/*-webkit-linear-gradient(top, #fff 0%, #fff 100%);*/
+  /*background: linear-gradient(to bottom, #fff 0%, #fff 100%);*/
+  border-radius: 0px;
+  /*box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);*/
+  border: solid 1px #aaa;
+}
+.cekYes label:after {
+  content: '';
+  width: 17px;
+  height: 8px;
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  border: 3px solid #666;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.cekYes label:hover::after {
+  opacity: 0.3;
+}
+.cekYes input[type=checkbox], 
+.cekYes input[type=radio] {
+  display: none;
+}
+.cekYes input[type=checkbox]:checked + label:after,
+.cekYes input[type=radio]:checked + label:after
+{
+  opacity: 1;
+}
+.cekYes input[type=radio] + label:after
+{
+  border: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #666;
+  margin-top: 2px;
+  margin-left: 3px;
+  -webkit-transform: none;
+  transform: none;
+}
+
+/* end .cekYes */
+
+html,body
+{
+    font-family: 'Open Sans';
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.outsideContainer
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.headerOutside
+{
+    height: 74px;
+    width: 100%;
+}
+.header.is-fixed
+{
+    position:fixed;
+    margin: 0 auto;
+    top:0;
+    left:0;
+    right:0;
+    width:100px;
+    background-color:#FFF;
+    width:100%;
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+    box-shadow:0px 2px 10px 0px #CCC;
+    z-index:10;
+}
+.menuMobile
+{
+    display:none;
+}
+.cartContainerMobile
+{
+    display: none;
+}
+.logoOnstore
+{
+    background-repeat: no-repeat;
+    width: 262px;
+    height: 64px;
+    float: left;
+    position: relative;
+}
+.logoOnstore .logoContainer
+{
+    position: absolute;
+}
+.logoOnstore.fixed
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/LOGO-identitas_small.png');
+    background-repeat: no-repeat;
+    background-size:192px 45px;
+    width: 192px;
+    height: 47px;
+    float: left;
+} 
+.topMenu.blank
+{
+    display:none;
+}
+.linkOnstore
+{
+    margin-left: 262px;
+    text-align: right;
+    font-size: 10pt;
+    margin-top: 0px;
+    position: relative;
+}
+.linkOnstore.fixed
+{
+    margin-left: 250px;
+    text-align: right;
+    font-size: 10pt;
+    margin-top: 0px;
+    position: relative;
+}
+.cartContainerDesktop
+{
+    float: right;
+    margin-top: 10px;
+}
+.cartContainerDesktop.fixed
+{
+    float: right;
+    margin-top: 0px;
+    width: 99px;
+}
+#background
+{
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #000000;	
+	z-index: 1;
+}
+a.flashyView.fixed
+{
+    float:right;
+    background-color: #eee;
+    color: #ff6600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cartContainerDesktop a.flashyView
+{
+    display:none;
+}
+a.flashyView.fixed:hover
+{
+    background-color: #ccc;
+}
+.btnCancelBannerr:hover {
+    -webkit-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
+    opacity: 1;
+    background-color: #aaa;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.btnApplyBannerr:hover
+{
+    -webkit-box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.75);
+    opacity: 1;
+    background-color: #aaa;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.btnCancelBannerr
+{
+    width: 40px;
+    height: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: url("https://images.onstore.co.id/i/onstoreNew/button_cancel.png") center / 20px no-repeat;
+}
+.btnApplyBannerr
+{
+    width: 40px;
+    height: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: url("https://images.onstore.co.id/i/onstoreNew/button_ok.png") center / 20px no-repeat;
+}
+.cartContainerDesktop .iconButton
+{
+    background-size: 25px 25px;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    position: relative;
+    margin-right:3px;
+    float:left;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cartContainerDesktop .divChallengeNotif
+{
+    background-image:url('https://images.onstore.co.id/images/newDesign/iconChallenge.png');
+}
+.cartContainerDesktop .divChallengeNotif:hover
+{
+    background-image:url('https://images.onstore.co.id/images/newDesign/iconChallengeHover.png');
+}
+.cartContainerDesktop .divChallengeNotif .status
+{
+    background:url('https://images.onstore.co.id/images/newDesign/iconChallengeAttention.png') no-repeat center;
+    background-size: 13px 15px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -2px;
+    right: 1px;
+}
+.cartContainerDesktop .divShoppingCart
+{
+    background-image:url('https://images.onstore.co.id/images/newDesign/iconShoppingcart_small.png');
+}
+.cartContainerDesktop .divShoppingCart:hover
+{
+    background-image:url('https://images.onstore.co.id/images/newDesign/iconShoppingcart_smallHover.png');
+}
+.divShoppingCart .preview
+{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: rgba(0,0,0,0.8);
+    color: #ff6600;
+    font-weight: 100;
+    width: 18px;
+    height: 18px;
+    right: 4px;
+    top: -2px;
+    position: absolute;
+}
+.divShoppingCart .preview1
+{
+    font-size: 8pt;
+    text-align: center;
+    vertical-align: middle;
+    padding-top:3px;
+}
+.divShoppingCart .preview2
+{
+    font-size: 9pt;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 4px;
+    
+}
+.cartContainerDesktop #btnLogin, .cartContainerDesktop #btnAkun
+{
+    display:none;
+}
+.cartContainerDesktop #btnLogin.fixed
+{
+    display:block;
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_notLogin.png?v=20170325220400');
+}
+.cartContainerDesktop #btnLogin.fixed:hover
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_notLoginHover.png?v=20170325220400');
+}
+
+.cartContainerDesktop #btnAkun.fixed
+{
+    display:block;
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_login.png?v=20170325220400');
+}
+.cartContainerDesktop #btnAkun.fixed:hover
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_loginHover.png?v=20170325220400');
+}
+.btnMain
+{
+    background-color: #fff;
+    border-radius: 10%;
+    outline: none;
+}
+.menuClickCategory
+{
+    display: none;
+}
+.menuClickCategory.fixed
+{
+    display: block;
+    width: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+    float: left;
+    padding-top: 5px;
+    /*padding-left: 5px;*/
+    height: 40px;
+}
+.menuClickCategory.fixed:hover
+{
+    background-color: #f8f8f8;
+}
+/*.menuClickCategory.fixed.showMenu
+{
+    display: block;
+}*/
+.menuClickCategory .menuIcon
+{
+    width: 40px;
+    float: left;
+    height: 50px;
+    /*padding-left: 5px;*/
+    padding-right: 10px;
+}
+.menuClickCategory .menuIcon div
+{
+    margin-top: 4px;
+    height: 4px;
+    background-color: #606060;
+}
+.menuClickCategory .menuIcon div:first-child
+{
+    margin-top: 7px;
+}
+.searchContainer
+{
+    padding-left: 40px;
+    margin-right: 70px;
+    position:relative;
+}
+.searchContainer.fixed
+{
+    padding-left: 0px;
+    margin-right: 105px;
+}
+.searchContainer .searchContainerText
+{
+    margin-right: 0px;
+    height: 28px;
+    margin-top: 10px;
+}
+.searchContainer .searchContainerText #txtSearch
+{
+    width: 100%;
+    height: 28px;
+    border: solid 1px #515151;
+    padding-left: 5px;
+    padding-right: 35px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.searchContainer .searchContainerButton
+{
+    position:absolute;
+    right:0px;
+    width: 30px;
+    height: 28px;
+}
+.searchContainer .searchContainerButton #btnSearch
+{
+    width: 28px;
+    height: 24px;
+    border: none;
+    background-image: url('https://images.onstore.co.id/images/newDesign/searchSymbol_small.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    background-size: 15px 15px;
+    margin-top:2px;
+}
+/* CONTENT */
+
+    #fileUploadBanner
+    {
+        display: none;
+    }
+    .framenews
+    {           
+        text-align: center;
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 50;
+        background-color: rgba(0,0,0,0.7);
+        overflow: hidden;         
+    }
+    .framenews:before
+    {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    #newscontent
+    {
+        vertical-align: middle;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    #announcement
+    {
+        width: 400px;
+        height:150px;
+        padding: 10px;
+        border: 5px solid white;
+        margin: 0 auto;
+        background-color: White;
+        position: relative;              
+    }
+    .btnClosePopup
+    {
+        display:none;
+        position: absolute;    
+        right: 0;
+        top: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid Red;
+        background: url('https://onstore.co.id/images/onstoreNew/cart/close.png') no-repeat center;
+        cursor: pointer;
+    }
+    .countainerPopup
+    {    
+        position: absolute;
+        top: 40px;
+        bottom: 50px;
+        text-align: center;
+        font-size: 12pt;
+    }
+    .divbuttonOK
+    {
+        position: absolute;    
+        right: 0;
+        bottom: 0;
+        display: block;
+    }
+   
+    .smallinfo
+    {
+        position: absolute;    
+        left: 0;
+        bottom: 0;
+        display: block;
+    }
+    .btnOK
+    {
+        border: 0px solid transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 70px;
+        font-size: 11pt;
+        height: 28px;
+        background-color: #ff6600;
+        border: 1px solid #ff6600;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .btnOK:hover
+    {
+        background-color: #fff;
+        border: 1px solid #ff6600;
+        color: #ff6600;
+    }
+    
+    .framenews1
+    {   
+        display:none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 10;           
+        background-color: rgba(0,0,0,0.7);
+        overflow : hidden;           
+    }
+    
+    #announcement1
+    {
+        width: 400px;
+        height:420px;
+        padding: 10px;
+        border: 5px solid white;
+        margin: 0 auto;
+        background-color: White;
+        margin-top: 140px;
+        position: relative;              
+    }
+    .btnClosePopup1
+    {
+        display:none;
+        position: absolute;    
+        right: 0;
+        top: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid Red;
+        background: url('https://onstore.co.id/images/onstoreNew/cart/close.png') no-repeat center;
+        cursor: pointer;
+    }
+    .countainerPopup1
+    {    
+        position: absolute;
+        top: 40px;
+        bottom: 50px;
+        font-size: 12pt;
+        float:left;
+        width: 100%;
+        padding-right: 20px;
+    }
+    .containerPopup2
+    {
+        position: absolute;
+        top: 40px;
+        bottom: 50px;
+        font-size: 12pt;
+        width: 50%;
+        margin-left:50%;
+    }
+    .divbuttonSave1
+    {
+        position: absolute;    
+        right: 75px;
+        bottom: 0;
+        display: block;
+    }
+     .divbuttonCancel1
+    {
+        position: absolute;    
+        right: 0;
+        bottom: 0;
+        display: block;
+    }
+    .smallinfo1
+    {
+        position: absolute;    
+        left: 0;
+        bottom: 0;
+        display: block;
+    }
+    .buttonSave1
+    {
+        border: 0px solid transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 70px;
+        font-size: 11pt;
+        height: 28px;
+        background-color: #ff6600;
+        border: 1px solid #ff6600;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .buttonBatal1
+    {
+        border: 0px solid transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 70px;
+        font-size: 11pt;
+        height: 28px;
+        background-color: #ff6600;
+        border: 1px solid #ff6600;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .buttonSave1:hover
+    {
+        background-color: #fff;
+        border: 1px solid #ff6600;
+        color: #ff6600;
+    }
+    .buttonBatal1:hover
+    {
+        background-color: #fff;
+        border: 1px solid #ff6600;
+        color: #ff6600;
+    }
+    .popupHeader1 
+    {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        height: 25px;
+        -box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-size: 9pt;
+        color: #fff;
+        background: #aaa;
+        text-align: left;
+    }
+    
+    .popupHeader {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        height: 25px;
+        -box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-size: 9pt;
+        color: #fff;
+        background: #aaa;
+        text-align: left;
+    }
+    #btnSimpanLinkBanner
+    {
+        margin-left: 10px;
+        width: 50px;
+        font-size: 11pt;
+        height: 26px;
+        background-color: #ff6600;
+        border: 1px solid #ff6600;
+        color: #fff;
+        cursor: pointer;
+    }
+    #btnSimpanLinkBanner:hover
+    {
+        background-color: #fff;
+        border: 1px solid #ff6600;
+        color: #ff6600;
+    }
+    .btnSkip
+    {
+        cursor: pointer;
+        color: #ff6600;
+    }
+    .btnSkip:hover
+    {
+        color: #aaa;
+    }
+    .imageMerktoUpload
+    {
+        width : 30px;
+        cursor:pointer;
+    }
+    .uploadImageMerk
+    {
+        visibility:hidden ;
+    }
+    .imageMerk:hover .uploadImageMerk
+    {
+        visibility:visible;
+        opacity:0.7;
+    }
+    .imageMerk
+    {
+        clear:both;
+        padding-bottom: 10px;
+        width:50%;
+        float:left;
+    }
+    .merkSelect
+    {
+        width:50%;
+        margin-left:50%;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+    .txtSearchMerk
+    {
+        margin-top: 13px;
+    }
+    .imgDelete
+    {
+        width: 21px;
+        padding-bottom: 8px;
+        cursor:pointer;
+        margin-right: 20px;
+    }
+    .imgDelete:hover
+    {
+        width: 22px;
+    }
+    .imgDeleteTemp
+    {
+        width: 21px;
+        padding-bottom: 8px;
+        cursor:pointer;
+        margin-right: 20px;
+    }
+    .imgDeleteTemp:hover
+    {
+        width: 22px;
+    }
+    #fileUploadIconMerk
+    {
+        display:none;
+    }
+    #btnApplyIconMerk
+    {
+        display:none;
+        margin-left: 65px;
+        margin-right: 5px;
+        float: left;
+    }
+    #btnCancelIconMerk
+    {
+        display:none;
+    }
+    .btnTambahMerk
+    {
+        width:20px;
+        cursor:pointer;
+    }
+    .divTambahMerk
+    {
+        float:left;
+        clear:both;
+    }
+    #btnTambahMerk
+    {
+        cursor:pointer;
+        float:left;
+        margin-left:5px;
+    }
+     .divErrMessage
+    {
+        font-size: 9pt;
+        color: red;
+        /*position:absolute;
+        bottom: 5px;
+        left: 10px;*/
+    }
+    .txtSearchMerk.ui-autocomplete-input.error
+    {
+        border:dotted 1px red;
+    }
+.contentContainer
+{
+    max-width:1200px;
+    height:auto;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top:25px;
+}
+.contentContainer .captionContent
+{
+    width:100%;
+    /*height:70px;*/
+    color:#FFF;
+    font-size:16px;
+}
+.contentContainer .captionContent .topMenu
+{    
+    position: relative;
+    background-color:#FFF;
+    padding: 8px;
+    font-size: 12pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contentContainer .captionContent .topMenu:hover
+{ 
+    background-color: #EEE;
+}
+.contentContainer .captionContent .topMenu .comingSoon
+{  
+    color: #000;
+    font-size: 8pt;
+    font-weight: normal;
+}
+.contentContainer .captionContent .topMenu:hover .comingSoon
+{
+    color: #F67500;
+}
+.contentContainer .captionContent .topMenu.aktif
+{    
+    background-color:#F67500;
+}
+.topMenu.onshop
+{
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 2px solid #F67500;
+    border-right: 1px solid #F67500;
+}
+.topMenu.onshop span.captionHeader
+{
+    color: #23A9FF;
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size: 25px 24px;
+    padding: 5px 5px 5px 28px;
+    cursor: pointer;
+}
+.topMenu span.other
+{
+    display: none;
+}
+.topMenu span.desktop
+{
+    display: initial;
+    color: #FFF;
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size: 26px 24px;
+    padding: 5px 5px 5px 30px;
+    cursor: pointer;
+}
+.topMenu.ontravel
+{
+    float: left;
+    width: 35%;
+    text-align: center;
+    border: 2px solid #F67500;
+    border-left: 1px solid #F67500;
+    border-right: 1px solid #F67500;
+}
+.topMenu.ontravel span.captionHeader
+{
+    color: #23A9FF;
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size: 25px 24px;
+    padding: 5px 5px 5px 28px;
+    cursor: pointer;
+}
+.topMenu.onpayment
+{
+    width: 35%;
+    margin-left: 65%;
+    text-align: center;
+    border: 2px solid #F67500;
+    border-left: 1px solid #F67500;
+}
+.topMenu.onpayment span.captionHeader
+{
+    color: #39A51A;
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size: 32px 24px;
+    padding: 5px 5px 5px 36px;
+    cursor: pointer;
+}
+.subHeader 
+{
+    margin:0px;
+    display:block;
+    width:100%;
+    font-size: 0;
+}
+.subHeader .subHeaderLeft
+{
+    float:left;
+    width:30%;
+    border-right:1px solid #CCC;
+    position: relative;
+    height: auto;
+}
+.subHeader .subHeaderRight
+{
+    float:none;
+    margin-left:30%;
+}
+.subHeader .subHeaderRight .subHeaderRightLeft
+{
+    float:left;
+    width:50%;
+    position: relative;
+    height: auto;
+}
+.subHeader .subHeaderRight .subHeaderRightRight
+{
+    float:none;
+    margin-left:50%;
+    border-left: solid 1px #ccc;
+    position: relative;
+    height: auto;
+}
+
+
+ .mcontentContainer
+{
+    display:none;
+}
+.mslider
+{
+    display:none;
+}
+.msliderBottom
+{
+    display:none;
+}
+.floorCategory
+{
+    display:none;
+}
+.captionFloorCategory
+{
+    display:none;
+} 
+.mcontainer
+{
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 750px) 
+{
+    .mContainer
+    {
+        margin-bottom: 286px;
+    }
+}
+.mfooter
+{
+    display:none;
+}
+
+/* FLOOR CATEGORY */
+.dfloorCategory
+{
+    clear:both;
+    max-width:1200px;
+    display:block;
+    margin:0 auto;
+    padding: 20px 10px 10px 10px;
+}
+.dfloorCategory .dcaptionFloorCategory
+{
+    /*margin-top:15px;*/
+    position: relative;
+}
+.dcaptionFloorCategory a:link, .dcaptionFloorCategory a:visited
+{
+    color: #FFF;
+}
+.dcaptionFloorCategory a:hover
+{
+    color: #FFF;
+    text-decoration: underline;
+}
+.dleftCaptionFloorCategory
+{
+    padding-left:20px;
+    /*width:50%;*/
+    margin-right: 50%;
+    /*height:40px;*/
+    color:#FFF;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    font-size: 14pt;
+}
+.drightCaptionFloorCategory
+{
+    width: 50%;
+    float: right;
+    /*overflow-x: scroll;
+    overflow-y: auto;*/
+    /* height: 37px; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.drightCaptionFloorCategoryInside
+{
+    padding-top:5px;
+    /*width: 100%;
+    height: 100%;*/
+    height: 38px;
+    overflow: hidden;
+}
+.drightCaptionFloorCategory .bannerMerk
+{
+    height:100%;
+    padding:0;
+    margin:0;
+    margin-left: 20px;
+}
+.dcontentFloorCategory
+{
+    display:block;
+    width:100%;
+}
+.dcontentFloorCategory .dleftContentFloorCategory
+{
+    position: relative;
+    float:left;
+    width:50%;
+    border-left:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+}
+.dcontentFloorCategory .dleftContentFloorCategory .dleftContentFloorCategory-Left
+{
+    float:left;
+    width:40%;
+    padding-top:10px;
+    position: absolute;
+}
+a.dsubFloorCategory
+{
+    font-size: 14px;
+    display: list-item;
+    list-style: none;
+    padding: 5px 5px 5px 15px;
+}
+a.dsubFloorCategory:hover
+{    
+    /*background-color: #FFB7B7;
+    color:#FFF;*/
+}
+.dcontentFloorCategory .dleftContentFloorCategory .dleftContentFloorCategory-Right
+{
+    display:block;
+    float:none;
+    margin-left:40%;
+    font-size:0px;
+}
+.dcontentFloorCategory .drightContentFloorCategory
+{
+    margin-left:50%;
+    border-left:1px solid #DDD;
+}
+.drightContentFloorCategory .drightContentFloorCategory-Top
+{
+    width:100%;
+}
+.drightContentFloorCategory-Top .leftTopContent
+{
+    width:60%;
+    float:left;
+    border-right:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+}
+.drightContentFloorCategory-Top .rightTopContent
+{
+    margin-left:60%;
+    border-right:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+}
+.drightContentFloorCategory .drightContentFloorCategory-Bottom
+{
+    width:100%;
+}
+.drightContentFloorCategory-Bottom .leftBottomContent
+{
+    width:60%;
+    float:left;
+    border-right:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+    font-size:0px;
+}
+.drightContentFloorCategory-Bottom .rightBottomContent
+{
+    margin-left:60%;
+    border-right:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+    font-size:0px;
+}
+.dsponsored
+{
+    display:block;
+    font-size:10pt;
+    margin-top:25px;
+    padding:4px 15px 0px 20px;
+    color: #333;
+    text-align: center;
+}
+.dhakcipta
+{
+    display:block;
+    font-size:10pt;
+    padding:4px 15px 0px 20px;
+    color: #333;
+}
+/*Footer */
+/*control added content*/
+.controlAddedContent {
+    clear:both;
+    max-width:1200px;
+    padding-left:10px;
+    padding-right:10px;
+    display:block;
+    margin:0 auto;
+    margin-top:30px;
+}
+.addedLeftContent {
+    float: left;
+    width: 33%;
+}
+.addedCenterContent 
+{
+    float: left;
+    width: 34%;
+}
+.addedRightContent {
+    width: 33%;
+    margin-left: 67%;
+}
+.contentMarket
+{
+    height: 480px;
+}
+@media screen and (max-width: 900px) 
+{
+    .contentMarket
+    {
+        height: 420px;
+    }
+}
+.divLeftOnstore {
+    border-color: #cfcfcf;
+    border-width: 1px;
+    border-style: solid none solid solid;
+    height: 100%;
+    padding: 10px;
+}
+.divCenterOnstore {
+    border: 1px solid #cfcfcf;
+    height: 100%;
+    padding: 10px;
+}
+.imageCenter {
+    height: 200px;
+    text-align: center;
+}
+@media screen and (max-width: 900px) 
+{
+     .imageCenter {
+        height: 170px;
+     }
+}
+@media screen and (max-width: 830px) 
+{
+     .imageCenter {
+        height: 150px;
+     }
+}
+ .imageCenter .imageMarket
+ {
+     height: 100%;
+ }
+.divRightOnstore {
+    border-color: #cfcfcf;
+    border-width: 1px;
+    border-style: solid solid solid none;
+    height: 100%;
+    padding: 10px;
+}
+.onstoreMarket
+{
+    height: 100%;
+    position: relative;
+    font-size: 10pt;
+    padding: 20px;
+}
+@media screen and (max-width: 900px) 
+{
+    .onstoreMarket
+    {
+        padding: 10px;
+    }
+}
+.upperText {
+    font-size: 27pt;
+    line-height: 25pt;
+    text-align: center;
+}
+@media screen and (max-width: 1110px) 
+{
+    .upperText {
+        font-size: 20pt;
+        line-height: 20pt;
+    }   
+}
+@media screen and (max-width: 830px) 
+{
+    .upperText 
+    {
+        font-size: 16pt;
+        line-height: 16pt;
+    }   
+}
+.lowerText 
+{
+    font-size: 13pt;
+    text-align: center;
+    
+}
+.descText {
+    margin-top: 10px;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.imageContainer .rightText .upperText
+{
+    display: none;
+}
+.imageContainer .rightText .lowerText
+{
+    display: none;
+}
+@media screen and (max-width: 1110px) 
+{
+    .descText
+    {
+        margin-top: 10px;
+        font-size: 9pt;
+        text-align: center;
+    }
+    
+}
+.divRegisterButton 
+{
+    color: White;
+    padding-top: 4px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    margin: 20px 0px 0px 0px;
+    background-color: #F67500;
+    border: 1px solid #f67500;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+@media screen and (max-width: 1110px) 
+{
+    .divRegisterButton 
+    {
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .divRegisterButton 
+    {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+.divRegisterButton:hover
+{
+    cursor: pointer;
+    background-color: #EEE;
+    background-image:none;
+    color: #F67500;
+}
+/*footer payment*/
+.footerPaymentHead {
+    font-size: 10pt;
+    color: #000;
+    clear:both;
+    max-width:1200px;
+    display:block;
+    margin:0 auto;
+    margin-top: 20px;
+    padding:10px 20px;
+    margin-bottom: 330px;
+}
+.footerPayment {
+    text-align:justify;
+    font-size: 10pt;
+    color: #000;
+    clear:both;
+    max-width:1200px;
+    display:block;
+    margin:0 auto;
+    margin-top: 20px;
+    padding:20px 10px 20px 10px;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    display:none;
+}
+/*bagian footer*/
+.footer{
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    padding: 0px 10px 10px 10px;
+    background-color: #eaeaea;
+    left: 0;
+    right: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd',endColorstr='#bababa');
+    background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#fdfdfd),color-stop(100%,#bababa));
+    background-image: -webkit-linear-gradient(top,#fdfdfd 0%,#bababa 100%);
+    background-image: -moz-linear-gradient(top,#fdfdfd 0%,#bababa 100%);
+    background-image: -o-linear-gradient(top,#fdfdfd 0%,#bababa 100%);
+    background-image: linear-gradient(top,#fdfdfd 0%,#bababa 100%);
+    
+    position: relative;
+
+}
+.contentFooter   
+{
+    clear:both;     
+    margin:0 auto;
+    max-width: 1200px;
+    display: block;
+}
+.subcontentFooter
+{
+    width:100%;
+}
+.footerMenuLeft{
+    float:left;
+    width:60%;
+    padding:0px 10px 0px 10px;
+}
+.footerMenuCategory-Left{
+    width:35%;
+    float:left;
+    padding:10px;
+}
+.footerMenuCategory-Center{
+    margin-left:35%;
+    margin-right:30%;
+    float:none;
+    padding:10px;
+}
+.footerMenuCategory-Right{
+    width:30%;
+    float:right;
+    padding:10px;
+}
+.footerMenuHead{
+    margin-bottom:25px;
+    margin-top:25px;
+    font-weight:bold;
+}
+.childMenu{
+    margin-top:3px;
+    font-size: 10pt;
+}
+.footerMenuRight{
+    margin-left:60%;
+    padding-top:35px;
+}
+.footerMenuContent-Left{
+    float:left;
+}
+.footerMenuContent-Right
+{
+    padding-right:5%;
+}
+.medsos{
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 10pt;
+    width: 100%;
+    height:35px;
+    display: inline-block;
+}
+.medsos1
+{
+    padding: 10px 2px 7px 40px;
+    background-image: url('https://images.onstore.co.id/images/newDesign/medsos/fb.png');
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+.medsos2
+{
+    padding: 10px 2px 7px 40px;
+    background-image: url('https://images.onstore.co.id/images/newDesign/medsos/tw.png');
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+.medsos3
+{
+    padding: 10px 2px 7px 40px;
+    background-image: url('https://images.onstore.co.id/images/newDesign/medsos/ig.png');
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+.medsos4
+{
+    padding: 10px 2px 7px 40px;
+    background-image: url('https://images.onstore.co.id/images/newDesign/medsos/yutub.png');
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+.divNewsLetter {
+    width: 380px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    border: solid 1px #aaa;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+}
+.headerNewsLetter {
+    font-size: 10pt;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.newsletterText {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #666;
+    font-family: Open Sans;
+    font-size: 10pt;
+    /* line-height: 16pt; */
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.newsletterRegister {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    width: 100%;
+}
+.btnRegisterNewsletter 
+{
+    font-size: 10pt;
+    font-weight: bold;
+    height: 35px;
+    padding-top: 5px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+    width: 35px;
+    border: 0;
+    background-color: transparent;
+    background-image: url('https://images.onstore.co.id/images/newDesign/newsletter.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.btnRegisterNewsletter:hover
+{
+    background-color: transparent;
+    color:#484a49;
+}
+.newsLetterContainer {
+    padding-top: 1px;
+    position: relative;
+}
+.newsLetterContainer #newsletter {
+    width: 100%;
+    height: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 30px;
+    background-color: #fff;
+    border: 1px solid #515151;
+    color: #666;
+}
+.footersosmed
+{
+    display:none;
+}
+.backTransparent.show
+{
+    clear: both;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(12, 12, 12, 0.45);
+}
+@media screen and (max-width: 1110px) 
+{
+    .footerMenuCategory-Left
+    {
+        width:50%;
+    }
+    .footerMenuCategory-Center
+    {
+        width:50%;
+        margin-left:50%;
+        margin-right:0%;
+    }
+    .footerMenuCategory-Right
+    {
+        display:none;
+    }
+    .footerPayment
+    {
+        font-size:10pt;
+    }
+        
+    .footersosmed
+    {
+        clear:both;
+        display:block;
+        font-family:Open Sans;
+        margin-top:20px;
+    }
+    .hakcipta
+    {
+        font-size:10pt;
+        margin-bottom:10px;
+        padding:4px 15px 0px 20px;
+        color:#434343;
+    }
+    .sponsored
+    {
+        font-size:10pt;
+        padding:4px 15px 0px 20px;
+        color:#434343;
+    }
+    .dhakcipta
+    {
+        display:none;
+    }
+    .dsponsored
+    {
+        display:none;
+    }
+    .listsosmed
+    {
+        font-size:10pt;
+        color:#868686;
+    }
+    .sosmed1
+    {
+        display:inline-block;
+        height:30px;
+        background-image:url('https://images.onstore.co.id/images/newDesign/medsos/fb.png');
+        background-repeat:no-repeat;
+        background-position:left center;
+        padding:5px 0px 0px 33px;
+        margin-left:20px;
+    }
+    .sosmed2
+    {
+        display:inline-block;
+        height:30px;
+        background-image:url('https://images.onstore.co.id/images/newDesign/medsos/tw.png');
+        background-repeat:no-repeat;
+        background-position:left center;
+        padding:5px 0px 0px 33px;
+    }
+    .sosmed3
+    {
+        display:inline-block;
+        height:30px;
+        background-image:url('https://images.onstore.co.id/images/newDesign/medsos/ig.png');
+        background-repeat:no-repeat;
+        background-position:left center;
+        padding:5px 0px 0px 33px;
+    }
+    .sosmed4
+    {
+        display:inline-block;
+        height:30px;
+        background-image:url('https://images.onstore.co.id/images/newDesign/medsos/yutub.png');
+        background-repeat:no-repeat;
+        background-position:left center;
+        padding:5px 0px 0px 33px;
+    }
+    .btnRegisterNewsletter
+    {
+        font-size:8pt;
+        padding-left:0px;
+    }
+}
+  
+  #uploadBannerKiri
+{
+    display:none;
+}
+#uploadBannerTengah
+{
+    display:none;
+}
+#uploadBannerKanan
+{
+    display:none;
+}
+.imgUploadBanner:hover
+{
+    width: 35px;
+    height: 28px;
+}
+.imgUploadBanner
+{
+    width : 28px;
+    height:22px;
+    cursor:pointer;
+    margin-top: 6px;
+}
+.imgUploadBannerTengah:hover
+{
+    width: 35px;
+    height: 28px;
+}
+.subHeaderLeft:hover .divuploadBanner .divImgBlue,
+.subHeaderRightLeft:hover .divuploadBanner .divImgBlue,
+.subHeaderRightRight:hover .divuploadBanner .divImgBlue
+{
+        background-color: rgba(255,255,255,0.8);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+.imgUploadBannerTengah
+{
+    width : 25px;
+    height:20px;
+    cursor:pointer;
+    margin-top: 6px;
+}
+.imgUploadBannerKanan:hover
+{
+    width: 35px;
+    height: 28px;
+}
+.imgUploadBannerKanan
+{
+    width : 25px;
+    height:20px;
+    cursor:pointer;
+    margin-top: 6px;
+}
+.btnApplyBannerKiri, .btnBannerCancelKiri
+{
+    height: 21px;
+}
+.divuploadBanner
+{
+    padding: 1px;
+    width:100%;
+    opacity:0.5;
+    position: absolute;
+    bottom: 30px;
+    z-index: 1;
+}
+.btnApplyBannerKiri
+{
+    display: none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    float: left;
+    margin-left: 80px;
+}
+.btnApplyBannerTengah
+{
+    display: none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    float: left;
+    margin-left: 80px;
+}
+.btnApplyBannerKanan   
+{
+    display: none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    float: left;
+    margin-left: 80px;
+}
+.btnApplyBannerKiri:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnApplyBannerTengah:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnApplyBannerKanan:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.subHeaderLeft:hover .divuploadBanner
+{
+    display:block;
+}
+.subHeaderLeft .divuploadBanner:hover
+{
+    opacity:0.9;
+}
+.subHeaderRightLeft:hover .divuploadBanner
+{
+    display:block;
+}
+.subHeaderRightLeft .divuploadBanner:hover
+{
+    opacity:0.9;
+}
+.subHeaderRightRight:hover .divuploadBanner
+{
+    display:block;
+}
+.subHeaderRightRight .divuploadBanner:hover
+{
+    opacity:0.9;
+}
+.divuploadBanner .btnuploadBanner:hover
+{
+    color:#ff6600;
+    background-color: #fff;
+}  
+.divImgMosque
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+}
+.loaderTransferEwallet
+{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.onstore.co.id/i/newDesign/500x500-load.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    background-color: rgba(255,255,255,.6);
+}

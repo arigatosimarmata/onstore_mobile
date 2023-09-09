@@ -1,0 +1,996 @@
+﻿/* Default styles that will carry to the child style sheet */
+
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    font-family: 'Open Sans';
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-text-size-adjust: none;
+}
+.headerOutside {
+    height: 97px;
+    width: 100%;
+}
+.outsideContainer
+{
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menuMobile
+{
+    display: block;
+    float: left;
+    margin-top: 2px;
+}
+.menuMobile .showMenu
+{
+    width: 50px;
+    height: 33px;
+    text-align: left;
+}                    
+.menuMobile .showMenu .showMenuBar
+{
+    width: 30px;
+    height: 5px;  
+    background: #515151; 
+}
+.menuMobile .showMenu .showMenuMiddle
+{
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.cartContainerMobile
+{
+    display: block;
+    float: right;
+    margin-top: 10px;
+}
+
+.cartContainerMobile #btnCartMobile
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/iconShoppingcart_small.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px 25px;
+    background-color: #fff;
+    border: 0;
+    width: 30px;
+    height: 30px;
+}
+.cartContainerMobile #btnLoginMobile,
+.cartContainerMobile #btnLoginMobile.fixed 
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_notLogin.png');
+}
+.cartContainerMobile #btnLoginMobile:hover,
+.cartContainerMobile #btnLoginMobile.fixed:hover 
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_notLoginHover.png');
+}
+.cartContainerMobile #btnAkunMobile,
+.cartContainerMobile #btnAkunMobile.fixed 
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_login.png');
+}
+.cartContainerMobile #btnAkunMobile:hover,
+.cartContainerMobile #btnAkunMobile.fixed:hover 
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_loginHover.png');
+}
+.cartContainerMobile .iconButton
+{
+    background-size: 25px 25px;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    position: relative;
+    margin-right: 2px;
+    float:left;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cartMenuMobile
+{
+    display: block;
+    float: right;
+    margin-top: 10px;
+}
+
+.cartMenuMobile #btnCartMobile
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/iconShoppingcart_small.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px 25px;
+    background-color: #fff;
+    border: 0;
+    width: 30px;
+    height: 30px;
+}
+.cartMenuMobile #btnLoginMobile,
+.cartMenuMobile #btnLoginMobile.fixed 
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_notLogin.png');
+}
+.cartMenuMobile #btnLoginMobile:hover,
+.cartMenuMobile #btnLoginMobile.fixed:hover 
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_notLoginHover.png');
+}
+.cartMenuMobile #btnAkunMobile,
+.cartMenuMobile #btnAkunMobile.fixed 
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_login.png');
+}
+.cartMenuMobile #btnAkunMobile:hover,
+.cartMenuMobile #btnAkunMobile.fixed:hover 
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/user_loginHover.png');
+}
+.cartMenuMobile .iconButton
+{
+    background-size: 25px 25px;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    position: relative;
+    margin-right: 2px;
+    float:left;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media screen and (max-width: 350px) 
+{
+    .cartContainerMobile .iconButton
+    {
+        background-size: 21px 21px;
+        width:25px;
+        height:25px;
+        margin-right: 2px;
+    }
+    
+}
+.cartContainerMobile .divChallengeNotif
+{
+    background-image: url(https://images.onstore.co.id/images/newDesign/iconChallenge.png);
+}
+.cartContainerMobile .divChallengeNotif:hover
+{
+    background-image: url(https://images.onstore.co.id/images/newDesign/iconChallengeHover.png);
+}
+.cartContainerMobile .divChallengeNotif .status
+{
+    background:url('https://images.onstore.co.id/images/newDesign/iconChallengeAttention.png') no-repeat center;
+    background-size: 13px 15px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -2px;
+    right: 1px;
+}
+.cartContainerMobile .divShoppingCart
+{
+    background-image:url('https://images.onstore.co.id/images/newDesign/iconShoppingcart_small.png');
+}
+.cartContainerMobile .divShoppingCart:hover
+{
+    background-image:url('https://images.onstore.co.id/images/newDesign/iconShoppingcart_smallHover.png');
+}
+.divShoppingCart .cartContainer
+{
+    
+    border: solid 1px #aaa;
+    cursor: default;
+    font-size: 11pt;
+    background-color: #fff;
+    max-height: 250px;
+}
+
+.cartContainerMobile .divFooterMenu
+{
+    background-image:url('https://images.onstore.co.id/images/newDesign/iconShoppingcart_small.png');
+}
+.cartContainerMobile .divFooterMenu:hover
+{
+    background-image:url('https://images.onstore.co.id/images/newDesign/iconShoppingcart_smallHover.png');
+}
+.divShoppingCart .footerContainer
+{
+    
+    border: solid 1px #aaa;
+    cursor: default;
+    font-size: 11pt;
+    background-color: #fff;
+    max-height: 250px;
+}
+
+.divShoppingCart .preview
+{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: rgba(0,0,0,0.8);
+    color: #ff6600;
+    font-weight: 100;
+    width: 18px;
+    height: 18px;
+    right: 4px;
+    top: -2px;
+    position: absolute;
+}
+.divShoppingCart .preview1
+{
+    font-size: 11pt;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 0px;
+    position: absolute;
+    top: -2px;
+    right: 0px;
+}
+.divShoppingCart .preview2
+{
+    font-size: 9pt;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+.logoOnstore
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/LOGO-identitas_small.png');
+    background-repeat: no-repeat;
+    background-size: 200px 49px;
+    background-position: center center;
+    width: auto;
+    height: 49px;
+    margin-left: 50px;
+    margin-right: 100px;
+    float: none;
+}
+.logoOnstore.fixed
+{
+    background-image: url('https://images.onstore.co.id/images/newDesign/LOGO-identitas_small.png');
+    background-repeat: no-repeat;
+    background-size: 200px 49px;
+    background-position: center center;
+    width: auto;
+    height: 49px;
+    margin-left: 40px;
+    margin-right: 100px;
+    float: none;
+} 
+@media screen and (max-width: 350px) 
+{
+    .logoOnstore, .logoOnstore.fixed
+    {
+        margin-left: 40px;
+        margin-right: 88px;
+    }
+    
+}
+.linkOnstore
+{
+    clear: both;
+    font-size: 10pt;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.linkOnstore.fixed 
+{
+    display: none;
+    margin-left: 0px; 
+    font-size: 10pt;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.linkOnstore.fixed.show
+{
+    display: block;
+}
+.linkOnstore .topMenu
+{
+    display: none;
+}
+.cartContainerDesktop
+{
+    display: none;
+}
+.menuClickCategory.fixed,
+.menuClickCategory.fixed.showMenu
+{
+    display: none;
+}
+.categoryFixedBackground.showMenu
+{
+    display: none;
+}
+.categoryFixedBackground.showMenu:not(.hideOnTop)
+{
+    display: none;
+}
+.searchContainer
+{
+    padding-left: 0px;
+    margin-right: 0px;
+    position:relative;
+}
+.searchContainer.fixed
+{
+    padding-left: 0px;
+    margin-right: 0px;
+}
+.searchContainer .searchContainerText
+{
+    margin-right: 0px;
+    height: 28px;
+    margin-top: 10px;
+}
+.searchContainer .searchContainerText #txtSearch
+{
+    width: 100%;
+    height: 28px;
+    border: solid 1px #515151;
+    padding-left: 5px;
+    padding-right: 35px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.searchContainer .searchContainerButton
+{
+    position:absolute;
+    right:0px;
+    width: 30px;
+    height: 28px;
+}
+.searchContainer .searchContainerButton #btnSearch
+{
+    width: 28px;
+    height: 24px;
+    border: none;
+    background-image: url('https://images.onstore.co.id/images/newDesign/searchSymbol_small.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    background-size: 15px 15px;
+    margin-top:2px;
+}
+/* CONTENT */
+.contentContainer
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.contentContainer .captionContent
+{
+    /* display: none; */
+}
+.contentContainer .categoryMenu
+{
+    border-bottom: none;
+}
+.contentContainer .categoryMenu .leftCategoryOutside
+{
+    display: none;
+    width: 0%;
+}
+.subHeader
+{
+    display: none;
+}
+.contentContainer .categoryMenu .rightCategory
+{
+    display: block;
+    width: 100%;
+    margin-left: 0%;
+}
+.mcontentContainer
+{
+    display: none;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.mcontentContainer.show
+{
+    margin-top: 0px;
+    position: inherit;
+    display: block;
+    width: 100%;
+    z-index: 11;
+}
+.mcontentContainer.fixed.show
+{
+    display: block;
+    position: fixed;
+    float: none;
+    width: 100%;
+    margin-top: 2px;
+    z-index: 11;
+}
+.contentContainer .captionContent
+{
+    width:100%;
+    height:42px;
+    color:#FFF;
+    padding-left:0px;
+    padding-top:0px;
+    font-size:16px;
+}
+.contentContainer .captionContent .topMenu 
+{
+    height: 42px;
+}
+.contentContainer .captionContent .topMenu .comingSoon
+{ 
+    display: none;
+}
+.topMenu.onshop
+{
+    width: 33%;
+    /*background-image: url('https://images.onstore.co.id/images/newDesign/ICON kategori utama/shoppingcart-icon.png');*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 28px;
+}
+.topMenu span.desktop
+{
+    display: none;
+}
+.topMenu span.other
+{
+    display: initial;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px 28px;
+    padding: 5px 5px 5px 30px;
+    cursor: pointer;
+}
+.topMenu.ontravel
+{
+    width: 34%;
+    /*background-image: url('https://images.onstore.co.id/images/newDesign/ICON kategori utama/plane-icon.png');*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 29px 28px;
+}
+/*.topMenu.ontravel span
+{
+    display: none;
+}*/
+.topMenu.onpayment
+{
+    width: 33%;
+    margin-left: 67%;
+    /*background-image: url('https://images.onstore.co.id/images/newDesign/ICON kategori utama/secure-payment-icon.png');*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 37px 28px;
+}
+/*.topMenu.onpayment span
+{
+    display: none;
+}*/
+.mcategoryMenu .rightCategory
+{
+    display:block;
+    margin-left: 300px;
+    width: auto;
+}
+.mslider
+{
+    clear:both;
+    display:block;
+    width:100%;
+    font-size:0px;
+}
+.msliderBottom
+{
+    clear:both;
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.msliderBottom .subHeaderRightLeft{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.msliderBottom .subHeaderRightRight{
+    margin-left: 50%;
+    position: relative;
+}
+.msliderBottom .msubSliderBottom
+{
+    float:left;
+    width:50%;
+}
+.backWhiteBlur.show
+{
+    clear: both;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(144, 144, 144, 0.56);
+}
+
+/* FLOOR CATEGORY */
+.dfloorCategory
+{
+    clear:both;
+    width:100%;
+    display:block;
+    padding:0px;
+}
+.dfloorCategory .dcaptionFloorCategory
+{
+    border-bottom:3px solid #FF0000;
+}
+.dleftCaptionFloorCategory
+{
+    padding-left:10px;
+    width:100%;
+    background-color:Red;
+    color:#FFF;
+    padding-top:10px;
+    margin-top: 20px;
+    font-size: 11pt;
+}
+.drightCaptionFloorCategory
+{
+    display:none;
+}
+.dcontentFloorCategory
+{
+    display:block;
+    width:100%;
+}
+.dcontentFloorCategory .dleftContentFloorCategory
+{
+    float:left;
+    width:60%;
+    border-left:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+}
+.dcontentFloorCategory .dleftContentFloorCategory .dleftContentFloorCategory-Left
+{
+    display:none;
+}
+a.dsubFloorCategory
+{
+    font-size: 14px;
+    display: list-item;
+    list-style: none;
+    padding: 5px 5px 5px 15px;
+}
+a.dsubFloorCategory:hover
+{    
+    background-color: #FFB7B7;
+    color:#FFF;
+}
+.dcontentFloorCategory .dleftContentFloorCategory .dleftContentFloorCategory-Right
+{
+    display:block;
+    float:none;
+    font-size:0px;
+    margin-left:0px;
+}
+.dcontentFloorCategory .drightContentFloorCategory
+{
+    margin-left:60%;
+    border-left:1px solid #DDD;
+}
+.drightContentFloorCategory .drightContentFloorCategory-Top
+{
+    width:100%;
+}
+.drightContentFloorCategory-Top .leftTopContent
+{
+    display:none;
+}
+.drightContentFloorCategory-Top .rightTopContent
+{
+    margin-left:0%;
+    border-right:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+}
+.drightContentFloorCategory .drightContentFloorCategory-Bottom
+{
+    width:100%;
+}
+.drightContentFloorCategory-Bottom .leftBottomContent
+{
+    
+    display:none;
+}
+.drightContentFloorCategory-Bottom .rightBottomContent
+{
+    margin-left:0%;
+    border-right:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+    font-size:0px;
+}
+
+.mcontainer
+{
+    margin-bottom: 320px;
+}
+/* Footer Mobile*/
+.mfooter {
+    display: block;
+    width: 100%;
+    border-top: 2px solid grey;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #eee;
+    /*position: relative;*/
+    bottom: 0px;
+}
+.contentFooter
+{
+    display:none;
+}
+.footerText
+{
+    display:block;
+    text-align:center;
+    margin-top:5px;
+    color:gray;
+    font-size:12px;
+    margin-bottom: 5px;
+}
+.footerTextOrange
+{
+    display:block;
+    text-align:center;
+    margin-top:5px;
+    color:#ff6600;
+    font-size:12px;
+}
+.footerMobileMedsos
+{
+    display:block;
+    margin:0px auto;
+}
+/* Footer Desktop */
+.controlAddedContent
+{
+    clear: both;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: block;
+    margin-bottom: 340px;
+}
+.contentMarket 
+{
+    height: 300px;
+}
+.divLeftOnstore
+{
+    padding: 0px;
+}
+.divCenterOnstore
+{
+    padding: 0px;
+}
+.divRightOnstore
+{
+    padding: 0px;
+}
+.lowerText, .upperText
+{
+    display: none;
+}
+.descText
+{
+    text-align: left;
+}
+.imageContainer
+{
+    height: 100px;
+}
+.imageContainer .imageCenter
+{
+    float: left;
+    text-align: left;
+    height: 100px;
+}
+.imageContainer .imageCenter img
+{
+    width: 80px;
+    height: 87px;
+}
+.imageContainer .rightText
+{
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    height: 100px;
+}
+.imageContainer .rightText .upperText
+{
+    display: block;
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 20pt;
+    text-align: left;    
+    padding-top: 20px;
+}
+.imageContainer .rightText .lowerText
+{
+    display: block;
+    font-size: 12pt;
+    text-align: left;
+}
+.footerPaymentHead
+{
+    display:none;
+}
+.footerPaymentHead.m
+{
+    display:block;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+.footerIconLeftSide
+{
+    float:left;
+    text-align: center;
+}
+.footerPayment
+{
+    display:none;
+}
+.medsos {
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 10pt;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    padding: 0;
+}
+    .addedLeftContent 
+    {
+        clear: both;
+        width: 100%;
+        padding: 0px;
+    }
+    .addedCenterContent 
+    {
+        clear: both;
+        width: 100%;
+        padding: 0px;
+    }
+    .addedRightContent 
+    {
+        clear: both;
+        width: 100%;
+        padding: 0px;
+        margin-left: 0px;
+    } 
+    .contentMarket 
+    {
+        height: 250px;
+    }    
+    .divLeftOnstore
+    {
+        border-style: solid solid solid solid;
+        padding: 0px;
+    }
+    .divCenterOnstore
+    {
+        border-style: none solid solid solid;
+        padding: 0px;
+    }
+    .divRightOnstore
+    {
+        border-style: none solid solid solid;
+        padding: 0px;
+    }
+    .imageContainer .imageCenter 
+    {
+        height: 210px;
+    }    
+    .imageContainer .imageCenter img
+    {
+        width: 150px;
+        height: 163px;
+    }
+    .imageContainer .rightText .upperText
+    {
+        display: block;
+        font-size: 20pt;
+        font-weight: bold;
+        line-height: 20pt;
+        text-align: left;    
+        padding-top: 20px;
+    }
+    .imageContainer .rightText .lowerText
+    {
+        display: block;
+        font-size: 16pt;
+        text-align: left;
+    }
+    .divRegisterButton 
+    {
+        left: 160px;
+        right: 30%;
+        bottom: 10px;
+    }
+
+    .iconFooterMobile
+    {
+        width: 100%;
+        text-align: center;
+        height: 75px;
+    }
+    
+    .imageContainer 
+    {
+        height: 100px;
+    }
+    .imageContainer .imageCenter 
+    {
+        height: 100px;
+        padding-left: 20px;
+    }
+    .imageContainer .imageCenter img 
+    {
+        width: 80px;
+        height: 87px;
+    }
+    .divRegisterButton 
+    {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    } 
+    
+    .logoOnstore
+    {
+        background-size: 30%;
+        height: 40px;
+    }
+    .logoOnstore.fixed
+    {
+        background-size: 160px 39px;
+        height: 40px;
+    } 
+    .labelPengiriman
+    {
+        width: 100%;
+    }
+    .footerIconRightSide, .footerIconLeftSide
+    {
+        width: 50%;
+        text-align: center;
+    }
+    .comodoIcon
+    {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    .paymentMethodLabel
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .iconFooterMobile
+    {
+        height: 75px;
+    }
+    
+    
+    .logoOnstore
+    {
+        background-size: 30%;
+        height: 40px;
+    }
+    .logoOnstore.fixed
+    {
+        background-size: 140px 34px;
+        height: 40px;
+    } 
+    
+    
+    .menuMobile
+    {
+        display: block;
+        float: left;
+        margin-top: 2px;
+    }
+    .headerOutside 
+    {
+        height: 88px;
+        width: 100%;
+    }
+    .dfloorCategory .dcaptionFloorCategory
+    {
+        border-bottom:3px solid #FF0000;
+    }
+    .divShoppingCart .cartContainer
+    {
+        border: solid 1px #aaa;
+        cursor: default;
+        font-size: 11pt;
+        background-color: #fff;
+        max-height: 250px;
+    }
+    .footerText
+    {
+        font-size:10px;
+    }
+    .contentMarket 
+    {
+        height: 280px;
+    }       
+    .imageContainer .imageCenter 
+    {
+        padding-left: 0px;
+    }
+    
+    .imageContainer .rightText .upperText
+    {
+        font-size: 16pt;
+        font-weight: bold;
+        line-height: 20pt;  
+        padding-top: 20px;
+    }
+    .imageContainer .rightText .lowerText
+    {
+        font-size: 13pt;
+    }
+    
+    .logoOnstore
+    {
+        background-size: 25%;
+        background-position-y: 9px;
+        height: 40px;
+    }
+    .logoOnstore.fixed
+    {
+        background-size: 120px 29px;
+        background-position-y: 9px;
+        height: 40px;
+    } 
+    
+    .logoOnstore
+    {
+        background-size: 100px 25px;
+        background-position-y: 12px;
+        height: 40px;
+    }
+    .logoOnstore.fixed
+    {
+        background-size: 100px 25px;
+        background-position-y: 12px;
+        height: 40px;
+    } 
+    .logoOnstore, .logoOnstore.fixed
+    {
+        margin-left: 35px;
+        margin-right: 84px;
+    }
+    

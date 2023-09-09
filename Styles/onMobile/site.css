@@ -1,0 +1,302 @@
+﻿
+body   
+{
+    font-size: 10pt;
+    letter-spacing:2px;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+html
+{
+    width:100%;padding:0;margin:0;height:100%;
+}
+
+a
+{
+    outline: none;
+}
+
+a:link, a:visited
+{
+    color: #868686;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #ff6600;
+    /*text-decoration: underline; */
+}
+
+a:active
+{
+    color: #808080;
+}
+
+a.important
+{
+    color: Red;
+    text-decoration: underline;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 11pt;
+    color: #000;
+    font-variant: normal;
+    text-transform: none;
+    font-weight: bold;
+}
+
+h1
+{
+}
+
+h2
+{
+}
+
+h3
+{
+}
+
+h4
+{
+}
+
+h5, h6
+{
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3a4f63;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+.buttonONSTORE
+{
+    border: solid 1px #ff6600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #ff6600;
+    color: #fff;
+    display: table;
+    cursor: pointer;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    box-shadow: 0px 0px 3px 1px rgba(102,102,102,0.5);
+}
+.buttonONSTORE:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+.buttonONSTOREGray
+{
+    border: solid 1px #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #eee;
+    color: #000;
+    display: table;
+    cursor: pointer;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    box-shadow: 0px 0px 3px 1px rgba(102,102,102,0.5);
+}
+.buttonONSTOREGray:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+.buttonONSTOREGray.small
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(102,102,102,1);
+    box-shadow: 0px 0px 1x 0px rgba(102,102,102,0.5);
+}
+
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.globalVar
+{
+    display:none;
+    visibility:hidden;
+}
+.queryStringVariable
+{
+    display:none;
+    visibility:hidden;
+}

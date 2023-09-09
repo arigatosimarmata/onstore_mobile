@@ -1,0 +1,876 @@
+﻿.controlHeader
+	{
+	    width:100%;
+	    min-width:1200px;
+		height:77px;
+		margin:0 auto;
+	}
+.leftHeader
+    {
+        width: 125px;
+        height: 125px;
+        float: left;
+        margin-left: 7px;
+        margin-top: 7px;
+    }
+.rightHeader
+    {
+        margin-left:150px;
+    }
+.headerRow
+   {
+        /*width:100%;
+        float:left;*/
+        position:relative;  
+        padding-right:20px;
+        padding-bottom: 3px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+   }
+ .rightHeader .line
+ {
+     border-bottom: solid 1px #000;
+     /*width: 100%;
+     float: left;*/
+     margin-left: 6px;
+ }
+.firstRow
+    {
+        display: inline-block;
+        width: 100%;
+        
+    }
+.secondRow
+    {
+        height:49px;
+        padding-top:8px;
+    }
+.onstoreLogo
+    {
+        background:url('https://images.onstore.co.id/images/onstoreNew/header/onstoreLogo.png') no-repeat center;
+        background-size:125px 125px;
+        width:125px;
+        height:125px;
+        /*margin-top:15px;*/
+    } 
+.twitter
+    {
+        background:url('https://images.onstore.co.id/images/onstoreNew/header/twitter.png') no-repeat center;
+    }
+.youtube
+    {
+        background:url('https://images.onstore.co.id/images/onstoreNew/header/youtube.png') no-repeat center;
+    }
+.facebook
+    {   
+        background:url('https://images.onstore.co.id/images/onstoreNew/header/facebook.png') no-repeat center;
+    }
+.instagram 
+    {
+        background:url('https://images.onstore.co.id/images/onstoreNew/header/instagram.png') no-repeat center;
+    }
+.bold
+    {
+        font-weight:bold;
+    }
+.mottoText
+    {
+        width: 100%;
+        float:left;
+    }
+.controlMenu
+    {
+        float: right;
+        letter-spacing:1px;
+        text-align:right;
+        font-size:10pt;
+        padding-top:5px;
+    }
+.controlMenu a
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*a
+    {
+        text-decoration:none;
+        color:Black;
+    }*/
+.divSocmed
+    {
+        float:right;
+        position:relative;
+        width:150px;
+    }
+.divSearch
+    {
+        
+        margin-right:195px;
+        background-color:#5c5c5c;
+        padding-top:6px;
+        padding-bottom:6px;
+        
+        -ms-transform: skew(-20deg); /* IE 9 */
+        -webkit-transform: skew(-20deg); /* Chrome, Safari, Opera */
+        transform: skew(-20deg);
+    }
+.divSearch .divSearchButton
+{   
+    background: url('https://images.onstore.co.id/images/onstoreNew/header/searchSymbol.png') no-repeat center;
+    background-size:15px 15px;
+    float: right;
+    width: 30px;
+    height: 20px;
+    /* padding-top: 30px; */
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #5c5c5c;
+    
+    -ms-transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+}
+.divSearch .divSearchLabel
+{
+    color: #fff;
+    
+    margin-left: 30px;
+    margin-right: 25px;
+    margin-top: 2px;
+    
+    float: left;
+    font-size: 11pt;
+    background-color: #5c5c5c;
+    height: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+    -ms-transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+}
+.divSearch .divSearchInput
+{
+    background: #fff;
+    /*margin-left: 200px;
+    margin-right: 50px;*/
+    /*height: 20px;*/
+    /*padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+    height:20px;
+    position: relative;
+    overflow: hidden;
+}
+.divSearch .divSearchInputInside
+{
+    position: relative;    
+    height: 20px;    
+    background: #fff;
+    box-sizing: border-box;    
+    -moz-box-sizing: border-box;    
+    -webkit-box-sizing: border-box;
+
+}
+.divSearch .divSearchInput #searchInput
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    /* line-height: 15px; */
+    padding: 2px 10px 2px 10px;
+    margin: 0;
+    border: 0;
+    height: 20px;
+    /* font-family: arial,sans-serif; */
+    font-size: 11pt;
+    letter-spacing: 2px;
+    background: 0 0;
+    color: #111;
+    outline: 0;
+    /* -webkit-appearance: none; */
+    /* box-shadow: none; */
+    /* text-indent: 8px; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+    -ms-transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+}
+input:focus
+    {
+        outline:none;
+    }
+.flashyView.loginContainer
+{
+    cursor: pointer;
+}
+
+.flashyView.loginContainer .notification
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #C50000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 8pt;
+    line-height: 20px;
+}
+.flashyView.loginContainer .username
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+.formLogin
+{
+    display: none;
+}
+.formLogin.show
+{
+    display: block;
+    margin:0 auto;
+    position: absolute;
+    width: 300px;
+    z-index: 11;
+    padding:10px 0px;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.formLogin.show .btnCloseAkun
+{
+    position:absolute;
+    right: 10px;
+    top: 20px;
+    display:block;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:1px solid Red;    
+    background: url('https://images.onstore.co.id/images/onstoreNew/cart/close.png') no-repeat center;
+    z-index: 1001;
+}
+.formLogin.show .btnCloseAkun:hover
+{
+    cursor: pointer;    
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+}
+}
+    
+.formLogin.show.fixed
+{
+    margin-top: 35px;
+}
+.formLogin .emailInput
+{
+    width: 100%;
+    margin-top:20px;
+    margin-bottom:15px;
+}
+.formLogin.show .emailInput #txtEmail, .formLogin.show.fixed .emailInput #txtEmail 
+{
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+}
+.formLogin .passwordInput
+{
+    width: 100%;
+    margin-top:20px;
+    margin-bottom:15px;
+}
+.formLogin.show .passwordInput #txtPassword, .formLogin.show.fixed .passwordInput #txtPassword
+{
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+}
+.formLogin .bottomLogin
+{
+    width:100%;
+    font-size: 8pt;
+}
+.formLogin .leftBottomLogin 
+{
+    width: 60%;
+    float: left;
+    text-align:left;
+}
+.formLogin .rightBottomLogin 
+{
+    width: 40%;
+    margin-left: 60%;
+}
+.formLogin .bottomFormLogin
+{
+    width: 100%;
+    margin-bottom:15px;
+}
+.formLogin .bottomFormLogin #btnLoginForm
+{
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    background-color: #F67500;
+    border: none;
+    color: #FFF;
+    font-size: 11pt;
+}
+.formLogin .bottomFormLogin #btnLoginForm:hover
+{
+    cursor: pointer;
+    background-color: #EEE;
+    background-image:none;
+    color: #F67500;
+}
+.formLogin .bottomFormDaftar
+{
+    width: 100%;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+.formLogin .bottomFormDaftar #LinkDaftar,
+.formLogin .bottomFormDaftar #LinkDaftarAss
+{
+    display: block;
+    width: 100%;
+    background-color: #DDD;
+    border: solid 1px #CCC;
+    color: #666;
+    text-align: center;
+    font-size: 11pt;
+    height: 30px;
+    padding-top: 3px;
+}
+.formLogin .bottomFormDaftar #LinkDaftar:hover,
+.formLogin .bottomFormDaftar #LinkDaftarAss:hover
+{
+    cursor: pointer;
+    background-color: #EEE;
+    color: #000;
+}
+.divShoppingCart .preview
+{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: rgba(0,0,0,0.8);
+    color: #ff6600;
+    font-weight: 100;
+    width: 18px;
+    height: 18px;
+    right: 4px;
+    top: -2px;
+    position: absolute;
+}
+.divShoppingCart .preview1
+{
+    font-size: 11pt;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.divShoppingCart .preview2
+{
+    font-size: 9pt;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+.divShoppingCart .arrowOutside
+{
+    width: 20px;
+    position: absolute;
+    bottom: -10px;
+    /* right: 0px; */
+    cursor: default;
+}
+.divShoppingCart .arrowOutside .arrowInsideLeft
+{
+    border-top: solid 10px #fff;
+    border-right: solid 10px #aaa;
+    width: 0px;
+    float: left;
+}
+.divShoppingCart .arrowOutside .arrowInsideRight
+{
+    border-top: solid 10px #fff;
+    border-left: solid 10px #aaa;
+    width: 0px;
+    margin-left: 10px;
+}
+.shopCart, .challengeForm
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+}
+.challengeForm
+{
+    display: none;
+}
+.challengeForm.show
+{
+    display: block;
+}
+.shopCart:before, .challengeForm:before
+{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.divShoppingCart .cartContainerOutside, .challengeForm .challengeFormOutside
+{
+    margin: 0 auto;
+    width: 540px;
+    vertical-align: middle;
+    display: inline-block;
+    padding:20px;
+    background-color:#FFF;
+    cursor: default;
+}
+.challengeForm .challengeFormOutside
+{
+    max-width: 600px;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+@media screen and (max-width: 650px) 
+{
+    .challengeForm .challengeFormOutside
+    {
+        width: calc(100% - 20px);
+    }
+}
+.divShoppingCart .cartHeader, .challengeForm .cfHeader
+{
+    position:relative;
+    height:55px;
+    display:block;
+    padding:10px 0px;
+    cursor: default;
+    font-size: 10pt;
+    background-color: #fff;
+    z-index:10;
+}
+.challengeForm .cfHeader
+{
+    height:10px;
+}
+.cartHeader .cartHeaderLogo, .cfHeader .cfHeaderLogo
+{
+    float:left;
+    /*width:50%;*/
+    height:100%;
+    font-size:10pt;
+    /*background-image: url('https://images.onstore.co.id/images/newDesign/LOGO-identitas_small.png');
+    background-size:150px 40px;
+    background-repeat: no-repeat;*/
+}
+.cartHeader .cartHeaderClose, .cfHeader .cfHeaderClose
+{
+    margin-left:50%;
+    width:50%;
+    height:100%;
+    text-align:right;
+    color:#AAA;
+}
+.cartHeader .cartHeaderClose .btnClose, .cfHeader .cfHeaderClose .btnClose
+{
+    position:absolute;
+    right: -15px;
+    top: -15px;
+    display:block;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:1px solid Red;    
+    background-image: url('https://images.onstore.co.id/images/onstoreNew/cart/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    cursor: pointer;
+}
+.cartHeader .cartHeaderClose .btnClose, .cfHeader .cfHeaderClose .btnClose:hover
+{
+    background-image: url('https://images.onstore.co.id/images/onstoreNew/cart/closeHover.png');
+}
+.cartHeader .cartHeaderClose .btnClose:hover
+{
+    color:#ff6600;
+    cursor:pointer;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+}
+.divShoppingCart .cartContainer
+{
+    width: 100%;
+    border: solid 1px #CCC;
+    cursor: default;
+    font-size: 10pt;
+    background-color: #fff;
+    max-height: 250px;
+    z-index:10;
+}
+.shopCart .cartTotal
+{
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box; 
+    cursor: default;  
+    background-color:#FFF;
+    z-index: 10;
+}
+.shopCart .cartTotal .paymentLink
+{
+    text-align: right;
+    margin-bottom: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top:15px;
+}
+.shopCart .cartTotal .paymentLink a
+{
+    width:50%;
+    float:left;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    display: table;
+    cursor: pointer;
+}
+.shopCart .cartTotal .paymentLink .goToShop
+{
+    float:left;
+    width: 100%;
+    height:100%;
+    background-color:#EEE;
+    border: solid 1px #AAA;
+    color:#000;
+    margin-right:10px;
+    margin: 0 auto;
+    letter-spacing: 0px;
+    /*-webkit-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.shopCart .cartTotal .paymentLink .goToShop:hover
+{
+    background-color: #FFF;
+}
+.shopCart .cartTotal .paymentLink .goToPayment
+{
+    float: right;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6600;
+    margin-left: 10px;
+    margin: 0 auto;
+    letter-spacing: 0px;
+    /*-webkit-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.shopCart .cartTotal .paymentLink .goToPayment:hover
+{
+    background-image: none;
+    background-color: #EEE;
+    color: #ff6600;
+}
+.shopCart .cartTotal .paymentLink a:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+.shopCart .cartTotal .value
+{
+    color: #900000;
+    float: right;
+    width: 150px;
+    text-align: right;
+    font-size: 12pt;
+    padding-top:10px;
+    padding-right:10px;
+    font-weight:bold;
+
+}
+.shopCart .cartTotal .label
+{
+    margin-right: 150px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 12pt;
+}
+.divShoppingCart .cartContainer .cartEmptyHeader
+{
+    font-size: 12pt;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.divShoppingCart .cartContainer .cartEmptyInfo
+{
+    font-size: 10pt;
+    text-align: center;
+}
+.divShoppingCart .cartContainer .cartItem
+{
+    height: 105px;
+    padding: 10px;
+    position: relative;
+    border-bottom: dashed 1px #ccc;
+}
+.divShoppingCart .cartContainer .cartDeleteItem
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50px;
+    height: 16px;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+}
+.divShoppingCart .cartContainer .cartDeleteItem:hover
+{
+    webkit-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(102,102,102,1);
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: rgba(255, 0, 0, 0.55);
+}
+.divShoppingCart .cartContainer .cartDeleteItem .cartDeleteItemImage
+{
+    width: 50px;
+    height: 16px;
+    border-bottom-left-radius: 6px;
+    background-color: rgba(255, 0, 0, 0.40);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 8pt;
+    text-align: center;
+    padding-left: 5px;
+    /*background: url('https://images.onstore.co.id/images/onstoreNew/cart/close.png') no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;*/
+}
+.divShoppingCart .cartContainer .cartItem.middle
+{
+    margin-top: 0px;
+}
+.divShoppingCart .cartContainer .cartItem.odd
+{
+    background-color: #FFF;
+}
+.divShoppingCart .cartContainer .cartItem:hover
+{
+    background-color: #eee;
+}
+.divShoppingCart .cartContainer .cartItem .cartImage
+{
+    clear:both;
+    width: 70px;
+    height: 90px;
+    float: left;
+    background-size: 70px 90px;
+    background-repeat: no-repeat;
+    border: solid 1px #fff;
+}
+.divShoppingCart .cartContainer .cartItem.odd .cartImage
+{
+    border: solid 1px #fef9f1;
+    /*margin-top:-8px;*/
+}
+.divShoppingCart .cartContainer .cartItem.changed1 .cartImage
+{
+    border: solid 1px #ff6600;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail
+{
+    margin-left: 70px;
+    padding-top: 5px;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .brand
+{
+    font-size: 10pt;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    text-transform: lowercase;
+    text-align:left;
+    padding-left:10px;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .name
+{
+    font-size: 10pt;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    text-align:left;
+    padding-left:10px;
+    height: 35px;
+    overflow: hidden;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .name .nameItemBlue
+{
+    color:#0048ff;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoSizeColor
+{
+    font-size: 10pt;
+    letter-spacing: 1px;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoSizeColor .size
+{
+    width: 30%;
+    float: left;
+    text-transform: lowercase;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoSizeColor .color
+{
+    width: 70%;
+    margin-left: 30%;
+    text-transform: lowercase;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice
+{
+    font-size: 12pt;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .qty
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+    font-size: 10pt;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .price
+{
+    width: 50%;
+    margin-left: 50%;
+    height: 16px;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .qty .qtyLabel
+{
+    width: 35px;
+    float: left;
+    line-height: 25px;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .qty .value
+{
+    margin-left: 35px;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .qty .value .qtyEdit
+{
+    width: 40px;
+    height: 25px;
+    margin-top:0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding-right: 0;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .qty .value .qtyButton
+{
+    width: 50px;
+    height: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 40px;
+    display: block;
+    font-size: 8pt;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    background-color: #AAA;
+    color: #FFF;
+}
+    .divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .qty .value .qtyButton:hover
+{
+    color:#ff6600;
+    background-color: #ccc;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .price .value
+{
+    float: right;
+    font-size: 10pt;
+    padding-top: 2px;
+}
+.divShoppingCart .cartContainer .cartItem .cartItemDetail .cartItemInfoQtyPrice .value
+{
+    color: #900000;
+}
+.iconHeader
+{
+    float:right;
+    margin-left:5px;
+    height:30px;
+    width:30px;
+    background-size:30px;
+}
+
+@media screen and (max-width: 750px) 
+{
+    .divShoppingCart .cartContainerOutside
+    {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        padding: 20px;
+        background-color: #FFF;
+        cursor: default;
+    }
+    .shopCart .cartTotal .paymentLink a
+    {
+        font-size:10pt;
+    }
+}

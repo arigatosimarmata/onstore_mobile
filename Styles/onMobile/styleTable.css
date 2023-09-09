@@ -1,0 +1,436 @@
+﻿div.formTabButton
+{
+    position: relative;
+    height: 40px;
+}
+div.formTabButton .tabButton
+{
+    height: 30px;
+    box-shadow: none;
+    position: absolute;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    background-color: #eee;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    bottom: 0px;
+    
+    cursor: pointer;
+    font-size: 9pt;
+    color: #777;
+}
+div.formTabButton .tabButton:not(.active):hover
+{
+    height: 33px;
+    box-shadow: inset 0 3px 0 #777;
+    font-size: 10pt;
+}
+div.formTabButton .tabButton.active
+{
+    height: 35px;
+    box-shadow: inset 0 3px 0 #2A90DA;
+    color: #2A90DA;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: none;
+    bottom: -1px;
+    overflow: hidden;
+    
+    cursor: default;
+    font-size: 10pt;
+    z-index: 1;
+}
+div.formTab
+{
+    padding: 10px;
+    border: solid 1px #ccc;
+    overflow: auto;
+    display: none;
+    width: 550px;
+    position: relative;
+    height: calc(100% - 60px);
+}
+@media screen and (max-width: 650px) 
+{
+    div.formTab
+    {
+        width: 100%;
+    }
+}
+div.formTab.active
+{
+    display: block;
+}
+.theader
+{
+    background-color: #eee;
+    display: block;
+}
+.theader.mbl
+{
+    display: none;
+}
+@media screen and (max-width: 600px) 
+{
+    .theader
+    {
+        display: none;
+    }
+    .theader.mbl
+    {
+        display: block;
+    }
+}
+.trow
+{
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+    font-size: 9pt;
+    display: block;
+}
+.trow.mbl
+{
+    display: none;
+}
+.trow.rank
+{
+    position: relative;
+    background-image: linear-gradient(to bottom, #ffd700, #cdad00 70%, #D4AF37);
+}
+.trow.rank:before
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: url(https://images.onstore.co.id/images/newdesign/progress.png) 0 0 repeat-x;
+}
+@media screen and (max-width: 650px) 
+{
+    .trow
+    {
+        display: none;
+    }
+    .trow.mbl
+    {
+        display: block;
+    }
+}
+.tbold
+{
+    font-weight: bold;
+}
+.trow.done
+{
+    background-color: #e5ffd8;
+    font-weight: normal;
+    color: #309100;
+    border-bottom: solid 1px #78bb57;
+    border-top: solid 1px #78bb57;
+}
+.tcol
+{
+    float:left;
+    padding: 5px;
+    height: 100%;
+    max-height: 40px;
+    overflow: hidden;
+    text-align: left;
+}
+.tcol.mbl.tleft1 {float: left;width: 80%;}
+.tcol.mbl.tright1 {float: right;width: 20%;}
+
+.tcol .tvalue {width:50px;float:left;text-align:right;}
+@media screen and (max-width: 500px) 
+{
+    .tcol .tvalue {width:100%;float:right;text-align:right;}
+}
+.tcol.last
+{
+    margin-right: 0px;
+}
+.tcol.noptb
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.theader .tcol
+{
+    text-align: center;
+    font-size: 11pt;
+}
+.tcol.mid           {text-align: center;}
+.tcol.right         {text-align: right;}
+
+.tcol.val00        {background-color: transparent;}
+.tcol.val00.header {border-bottom: 10px solid #fff;}
+
+.tcol.val01        {background-color: #eee;}
+.tcol.val01.header {border-bottom: 10px solid #ccc;}
+
+.tcol.val07        {background-color: #90ee90;}
+.tcol.val07.header {border-bottom: 10px solid #228b22;}
+
+.tcol.val10        {background-color: #ffd4d0;}
+.tcol.val10.header {border-bottom: 10px solid #a12f23;}
+
+.tcol.val08        {background-color: #ceecff;}
+.tcol.val08.header {border-bottom: 10px solid #2a9ae3;}
+
+.tcol.tauto
+{
+    margin-left: 20px;
+    float: none;
+    min-width: 350px;
+}
+@media screen and (max-width: 500px) 
+{
+    .tcol.tauto
+    {
+        min-width: 250px;
+    }
+}
+@media screen and (max-width: 380px) 
+{
+    .tcol.tauto
+    {
+        min-width: 0px;
+    }
+}
+.tcol .tpenting
+{
+    color: #a12f23;
+}
+
+
+.trow .sign
+{
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+}
+.trow.done .sign
+{
+    background-image: url(https://images.onstore.co.id/images/newdesign/iconDone50.png);
+}
+.trow.notyet .sign
+{
+    background-image: url(https://images.onstore.co.id/images/newdesign/iconnotyet50.png);
+}
+.progressContainer
+{
+    border-radius: 10px;
+    background-color: #ebebeb;
+    width: 100%;
+    height:20px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.progressContainer .progress 
+{
+    padding-right: 3px;
+    font-size: 9pt;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: normal;    
+    position: relative;
+    float: left;
+    margin: 0 -1px;
+    min-width: 30px;
+    height: 18px;
+    line-height: 16px;
+    text-align: right;
+    background: #cccccc;
+    border: 1px solid;
+    border-color: #bfbfbf #b3b3b3 #9e9e9e;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+    background-image: -moz-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+    background-image: -o-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+    background-image: linear-gradient(to bottom, #f0f0f0, #dbdbdb 70%, #cccccc);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.progressContainer .progress:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 18px;
+    background: url(https://images.onstore.co.id/images/newdesign/progress.png) 0 0 repeat-x;
+    border-radius: 10px;
+}
+.progressContainer .progress.red 
+{
+    background: #db3a27;
+    border-color: #c73321 #b12d1e #8e2418;
+    background-image: -webkit-linear-gradient(top, #ea8a7e, #e15a4a 70%, #db3a27);
+    background-image: -moz-linear-gradient(top, #ea8a7e, #e15a4a 70%, #db3a27);
+    background-image: -o-linear-gradient(top, #ea8a7e, #e15a4a 70%, #db3a27);
+    background-image: linear-gradient(to bottom, #ea8a7e, #e15a4a 70%, #db3a27);
+}
+.progressContainer .progress.green {
+    background: #85c440;
+    border-color: #78b337 #6ba031 #568128;
+    background-image: -webkit-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+    background-image: -moz-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+    background-image: -o-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+    background-image: linear-gradient(to bottom, #b7dc8e, #99ce5f 70%, #85c440);
+}
+.progressContainer .progress.orange
+{
+    background: #f2b63c;
+    border-color: #f0ad24 #eba310 #c5880d;
+    background-image: -webkit-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+    background-image: -moz-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+    background-image: -o-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+    background-image: linear-gradient(to bottom, #f8da9c, #f5c462 70%, #f2b63c);
+}
+.progressContainer .progress.blue {
+    background: #5aaadb;
+    border-color: #459fd6 #3094d2 #277db2;
+    background-image: -webkit-linear-gradient(top, #aed5ed, #7bbbe2 70%, #5aaadb);
+    background-image: -moz-linear-gradient(top, #aed5ed, #7bbbe2 70%, #5aaadb);
+    background-image: -o-linear-gradient(top, #aed5ed, #7bbbe2 70%, #5aaadb);
+    background-image: linear-gradient(to bottom, #aed5ed, #7bbbe2 70%, #5aaadb);
+}
+
+.teaser
+{
+    width: 100%;
+}
+
+div.tinfo
+{
+    text-align: left;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 400px) 
+{
+    div.tinfo
+    {
+        font-size: 9pt;
+    }
+}
+a.tlink
+{
+    color: #d03c3c;
+    text-decoration: underline;
+}
+.formTab .formButton
+{
+    height: 50px;
+    margin-top:10px;
+}
+
+.formTab .formButton input[type=button]
+{
+    width: 200px;
+    height: 35px;
+    background-color: transparent;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+    border: solid 1px #4285F4;
+    color: #4285F4;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 45px;
+    font-size: 10pt;
+}
+.formTab .formButton input[type=button].active
+{
+    background-color: #4285F4;
+    color: #fff;
+    font-size: 10pt;
+    cursor: default;
+}
+@media screen and (max-width: 750px) 
+{
+    .formTab .formButton input[type=button]
+    {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 400px) 
+{
+    .formTab .formButton input[type=button]
+    {
+        font-size: 8pt;
+        width: 120px;
+    }
+    .formTab .formButton input[type=button].active
+    {
+        font-size: 8pt;   
+    }
+}
+@media screen and (max-width: 340px) 
+{
+    .formTab .formButton input[type=button]
+    {
+        font-size: 7pt;
+        width: 100px;
+    }
+    .formTab .formButton input[type=button].active
+    {
+        font-size: 7pt;   
+    }
+}
+.formTab .formButton input[type=button]:not(.active):hover
+{
+    background-color: #dedede;
+}
+
+.formPreview
+{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.formPreview.hide
+{
+    display: none;
+}
+
+input[type=button].tugas
+{
+    background-image: url(https://images.onstore.co.id/images/newdesign/icon/iconTaskNotActive.png);
+}
+input[type=button].tugas.active
+{
+    background-image: url(https://images.onstore.co.id/images/newdesign/icon/iconTask.png);
+}
+input[type=button].ranking
+{
+    background-image: url(https://images.onstore.co.id/images/newdesign/icon/iconRankingNotActive.png);
+}
+input[type=button].ranking.active
+{
+    background-image: url(https://images.onstore.co.id/images/newdesign/icon/iconRanking.png);
+}
+
+input[type=button].tbutton
+{
+    border: solid 1px #4285F4;
+    background-color: #4285F4;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+input[type=button].tbutton:hover
+{
+    background-color: #669df7;
+}

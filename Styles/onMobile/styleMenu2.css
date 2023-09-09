@@ -1,0 +1,1235 @@
+﻿
+.categoryMenu
+{
+    position:relative;
+    width:100%;
+    height:auto;
+    margin:0px;
+    font-size:14px; 
+    border-bottom: 1px solid #ccc;
+}
+.categoryMenu .leftCategoryOutside
+{
+    position:absolute;
+    float: left;
+    width: 30%;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    z-index: 2;
+    
+}
+.categoryMenu .leftCategoryOutside a:link, .categoryMenu .leftCategoryOutside a:visited
+{
+    color: #000;
+}
+.categoryMenu .leftCategory
+{
+    height:auto;   
+    padding:5px 0px 10px 10px;
+    /*dari prog lama*/
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #fff;
+    /*dari prog lama*/
+}
+.categoryMenu .leftCategory .menu
+{
+    padding: 8px 0px 8px 40px;
+    background-position:left center;
+    background-repeat: no-repeat;
+    
+    /*dari prog lama*/
+    padding-top: 8px;
+    padding-bottom: 6px;
+    /*padding-left: 10px;*/
+    padding-right: 20px;
+    /*background-image: url('../../images/onstoreNew/mainMenu/nextIconSmall-gray.png');*/
+    background-position: 5px center;
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+    cursor: default;
+    /*dari prog lama*/
+}
+.categoryMenu .leftCategory .menu .mainMenuDetailItem
+{
+    display:none;
+}
+.categoryMenu .leftCategory .menu .mainMenuDetailItem a:link, .menu .mainMenuDetailItem a:l
+{
+    display:none;
+}
+.menuHover:hover
+{
+    background-color: #2ba3fa;
+    color: #fff;
+}
+.menuHover:hover>a:link,.menuHover:hover>a:visited
+{
+    color: #fff;
+}
+.menuHover2:hover a:link, .menuHover2:hover a:visited
+{
+    color: #ff6600;
+}
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem
+{
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0px;
+    left: 30%;
+    right: 0px;
+    bottom: 0px;
+    font-weight: normal;
+    display: block;
+    font-size: 10pt;
+    /* background: url('../../images/onstorenew/mainmenu/banner1.jpg') #fff; */
+    background-size: 100% auto;
+    background-position: right bottom;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    /* background-position: right bottom; */
+        
+    cursor: default;
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: solid 1px #ccc;
+    background-size: 40%;
+}
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .headerMainMenuDetailItem {
+    font-weight: bold;
+    font-size: 12pt;
+    /* cursor: pointer; */
+    padding-bottom: 7px;
+    padding-left: 5px;
+    color: #000;
+    /* width: 200px; */
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    list-style: none;
+}
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem {
+    padding-left: 10px;
+    cursor: pointer;
+    width: 200px;
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-top: 3px;
+    float: left;
+}
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .detailContentMainMenuDetailItem {
+    margin-top: 4px;
+    margin-left: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    width: 190px;
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-bottom: 2px;
+}
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .mainMenuImageBottom
+{
+    display: block;
+    position: absolute;
+    background-image: url('./images/onstorenew/category/kategori-makanan-minuman.png');
+    width: 100%;
+    height: 19%;
+    background-size: 100% auto;
+    background-position: right top;
+    bottom: -19%;
+    z-index: -1;
+    right: 0;
+}
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .mainMenuLinkImageBottom
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0%;
+    z-index: 100;
+    right: 0;
+}
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem .headerContentMainMenuDetailItem {
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: pointer;
+    width: 190px;
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-top: 3px;
+    list-style: none;
+}
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem ul.contentMainMenuDetailItem li.headerContentMainMenuDetailItem:hover a,
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .detailContentMainMenuDetailItem:hover a
+{
+    color: #ff6600;
+}
+/*Iqbal*/
+.headerContentMainMenuDetailItem .addCategory
+{
+    visibility:hidden;
+}
+.parentLink .addCategory1
+{
+    visibility:hidden;
+}
+.parentLink:hover .addCategory1
+{
+    visibility: visible;
+}
+.parentLink .addCategory1 .addCategoryImg1:hover 
+{
+    width:14px;
+    height:14px;
+}
+.addCategory1 .addCategoryImg1
+{
+    width :13px;
+    height :13px;
+    cursor:pointer;
+}
+.headerContentMainMenuDetailItem:hover .addCategory
+{
+    visibility: visible;
+}
+
+.headerContentMainMenuDetailItem .addCategory .addCategoryImg:hover 
+{
+    width:14px;
+    height:14px;
+}
+
+.headerContentMainMenuDetailItem .addCategory .addCategoryImg
+{
+    width :13px;
+    height :13px;
+}
+.inputNameCategory .txtAddCategory
+{
+    display : none;
+    max-width: 160px;
+    width: 100%;
+}
+#tempNameCat
+{
+    display:none;
+}
+.simpanButtonContainer #tempKodeCat
+{
+    display:none;
+}
+#tempNameCatParent
+{
+    display:none;
+}
+#btnCatSave
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+#btnBannerKiriSave
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    display:none;
+    float:left;
+}
+#btnBannerKiriSave:hover
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #ff6600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    display:none;
+    float:left;
+}
+#btnBannerTengahSave:hover
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #ff6600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    display:none;
+    float:left;
+}
+#btnBannerTengahSave
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    display:none;
+    float:left;
+}
+#btnBannerKananSave:hover
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #ff6600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    display:none;
+    float:left;
+}
+#btnBannerKananSave
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    display:none;
+    float:left;
+}
+#btnBigbannerSave
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    display:none;
+    float:left;
+}
+#btnBigbannerSave:hover
+{
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #ff6600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    display:none;
+    float:left;
+}
+.btnBannerCancelKiri:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnBannerCancelKiri
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 0px;
+}
+.btnBannerCancelTengah:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnBannerCancelTengah
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 0px;
+}
+.btnBannerCancelKanan:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnBannerCancelKanan
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 0px;
+}
+.btnBannerCancelBigbanner:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnBannerCancelBigbanner
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 0px;
+}
+.btnBannerCancelTengahAtas:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnBannerCancelTengahAtas
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 0px;
+}
+.btnBannerCancelKananAtas:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnBannerCancelKananAtas
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 0px;
+}
+.btnBannerCancelTengahBawah:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnBannerCancelTengahBawah
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 0px;
+}
+.btnBannerCancelKananBawah:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.btnBannerCancelKananBawah
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 0px;
+}
+.simpanButtonContainer
+{
+    display:none;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 37px;
+    z-index: 11;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fff;
+    box-shadow: 0px -2px 10px 0px #CCC;
+}
+.imageBrowse {
+    background-image: url('../../images/onstoreNew/btnTambahGambar.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px 25px;
+    background-color: rgba(200, 200, 200,0.8);
+    height: 30px;
+    width: 30px;
+    right: 0px;
+}
+.dleftContentFloorCategory-Right:hover .divBigbannerUpdate
+{
+    display:block;
+}
+.dleftContentFloorCategory-Right .divBigbannerUpdate:hover 
+{
+    opacity: 0.9;
+}
+.divBigbannerUpdate
+{
+    display:none;
+    margin-top: -28px;
+    height: 28px;
+    padding: 3px;
+    width: 100%;
+    opacity:0.5;
+    background-color: #444;
+    position: relative;
+}
+.leftTopContent:hover .divBannerKategoriUpdate
+{
+    display:block;
+}
+.leftTopContent .divBannerKategoriUpdate:hover
+{
+    opacity: 0.9;
+}
+.leftBottomContent:hover .divBannerKategoriUpdate
+{
+    display:block;
+}
+.leftBottomContent .divBannerKategoriUpdate:hover
+{
+    opacity: 0.9;
+}
+.rightTopContent:hover .divBannerKategoriUpdate
+{
+    display:block ;
+}
+.rightTopContent .divBannerKategoriUpdate:hover
+{
+    opacity: 0.9;
+}
+.rightBottomContent:hover .divBannerKategoriUpdate
+{
+    display:block ;
+}
+.rightBottomContent .divBannerKategoriUpdate:hover
+{
+    opacity: 0.9;
+}
+.divBannerKategoriUpdate
+{
+    display:none;
+    margin-top: -28px;
+    height: 28px;
+    padding: 3px;
+    width: 100%;
+    opacity:0.5;
+    background-color: #444;
+    position: relative;
+}
+.txtUploadBigbanner
+{
+    display: none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    float: left;
+    margin-left: 70px;
+}
+.txtUploadBigbanner:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.txtUploadBannerTengahAtas
+{
+    display: none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    float: left;
+    margin-left: 70px;
+}
+.txtUploadBannerTengahAtas:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.txtUploadBannerTengahBawah
+{
+    display: none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    float: left;
+    margin-left: 70px;
+}
+.txtUploadBannerTengahBawah:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.txtUploadBannerTengahBawah
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+.txtUploadBannerTengahBawah:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.txtUploadBannerKananAtas
+{
+    display: none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    float: left;
+    margin-left: 30px;
+}
+.txtUploadBannerKananAtas:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.txtUploadBannerKananBawah
+{
+    display: none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+    float: left;
+    margin-left: 30px;
+}
+.txtUploadBannerKananBawah:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+#fileUploadBigbanner
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+#fileUploadBannerTengahAtas
+{
+    display:none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+#fileUploadBannerKananAtas
+{
+    display : none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+#fileUploadBannerTengahBawah
+{
+    display : none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+#fileUploadBannerKananBawah
+{
+    display : none;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+.imgUploadBigbanner
+{
+    width : 25px;
+    cursor:pointer;
+}
+.imgUploadBannerTengahAtas
+{
+    width : 25px;
+    cursor:pointer;
+}
+.imgUploadBannerKananAtas
+{
+    width : 25px;
+    cursor:pointer;
+}
+.imgUploadBannerTengahBawah
+{
+    width : 25px;
+    cursor:pointer;
+}
+.imgUploadBannerKananBawah
+{
+    width : 25px;
+    cursor:pointer;
+}
+
+.menu1
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-fashion.png');
+}
+.menu2
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-gadget.png');
+}
+.menu3
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-buku-peralatan-kantor.png');
+}
+.menu4
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-alat-rumah-tangga.png');
+}
+.menu5
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-kecantikan.png');
+}
+.menu6
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-mainan-anak.png');
+}
+.menu7
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-olahraga-hobi.png');
+}
+.menu8
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-otomotif-industri.png');
+}
+.menu9
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-makanan-minuman.png');
+}
+.menu10
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-musik-game.png');
+}
+.menu11
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-workshop.png');
+}
+.menu12
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/voucher-icon.png');
+}
+.categoryMenu .rightCategory
+{
+    display:block;
+    margin-left:30%;
+    font-size:0px;
+}
+
+/* mobile */
+.mcategoryMenu
+{
+    position:relative;
+    width:100%;
+    height:auto;
+    margin:0px;
+    font-size:14px; 
+}
+
+/*.mcategoryMenu .leftCategoryOutside
+{
+    position:absolute;
+    float: left;
+    width: 30%;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    border-left: 2px solid #f67500;
+    border-right: 2px solid #f67500;
+}*/
+.mcategoryMenu .leftCategoryOutside a:link, .mcategoryMenu .leftCategoryOutside a:visited
+{
+    color: #000;
+}
+.mcategoryMenu .leftCategory
+{
+    height:auto;   
+    padding:5px 0px 10px 10px;
+    /*dari prog lama*/
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #fff;
+    /*dari prog lama*/
+}
+.mcategoryMenu .leftCategory .btnCloseMenu
+{
+    position: absolute;
+    right: -5px;
+    top: -97px;
+    display:block;
+    color: #FFF;
+    z-index: 12;
+    font-weight: bold;
+    padding: 5px;
+    padding-bottom: 4px;
+    padding-top: 4px; 
+}
+.mcategoryMenu .leftCategory .btnCloseMenu:hover
+{
+    background-color: #FFF;
+    color:#f67500;
+    cursor: pointer;
+}
+.mcategoryMenu .leftCategory .menu
+{
+    padding: 8px 0px 8px 40px;
+    background-position:left center;
+    background-repeat: no-repeat;
+    
+    /*dari prog lama*/
+    padding-top: 8px;
+    padding-bottom: 6px;
+    /*padding-left: 10px;*/
+    padding-right: 20px;
+    /*background-image: url('../../images/onstoreNew/mainMenu/nextIconSmall-gray.png');*/
+    background-position: 5px center;
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-bottom: 1px solid #DDD;
+    /*dari prog lama*/
+}
+.mcategoryMenu .leftCategory .menu .mainMenuDetailItem
+{
+    display:none;
+}
+.mcategoryMenu .leftCategory .menu .mainMenuDetailItem a:link, .menu .mainMenuDetailItem a:l
+{
+    display:none;
+}
+.mcategoryMenu .leftCategory .menuHover:hover
+{
+    background-color: #2ba3fa;
+    color: #fff;
+}
+.menuHover:hover>a:link,.menuHover:hover>a:visited
+{
+    color: #fff;
+}
+.menuHover2:hover a:link, .menuHover2:hover a:visited
+{
+    color: #ff6600;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem
+{
+    position: absolute;
+    padding-top: 10px;
+    padding: 0px;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    display: block;
+    font-size: 11pt;
+    /* background: url('../../images/onstorenew/mainmenu/banner1.jpg') #fff; */
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+        
+    cursor: default;
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: solid 1px #f67500;
+    background-size: 40%;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .headerMainMenuDetailItem {
+    font-weight: bold;
+    font-size: 12pt;
+    /* cursor: pointer; */
+    padding-left: 0px;
+    color: #000;
+    text-align: center;
+    /* width: 200px; */
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #EEE;
+    color: #f67500;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .headerMainMenuDetailItem a.headerLeft
+{
+    float: left;
+    width: 15%;
+    font-size: 12pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #DDD;
+    color: #666;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .headerMainMenuDetailItem a.headerLeft:hover
+{
+    background-color: #FFF;
+    color: #333;
+    cursor: pointer;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .headerMainMenuDetailItem a.headerRight
+{
+    margin-left: 15%;
+    width: 85%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #f67500;
+    margin-bottom: 10px;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .headerMainMenuDetailItem a.headerRight:hover
+{
+    background-color: #f67500;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F69F00',endColorstr='#F67500');
+    background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#F69F00),color-stop(100%,#F67500));
+    background-image: -webkit-linear-gradient(top,#F69F00 0%,#F67500 100%);
+    background-image: -moz-linear-gradient(top,#F69F00 0%,#F67500 100%);
+    background-image: -o-linear-gradient(top,#F69F00 0%,#F67500 100%);
+    background-image: linear-gradient(top,#F69F00 0%,#F67500 100%);
+    color: #FFF;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .contentMainMenuDetailItem {
+    padding-left: 0px;
+    cursor: pointer;
+    width: 100%;
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-top: 3px;
+    float: left;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .detailContentMainMenuDetailItem {
+    margin-top: 4px;
+    margin-left: 0px;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 100%;
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-bottom: 2px;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .contentMainMenuDetailItem .headerContentMainMenuDetailItem {
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: pointer;
+    width: 100%;
+    -box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-top: 3px;
+    border-bottom: 1px solid #DDD;
+}
+.mcategoryMenu .leftCategory .menu.selected .mainMenuDetailItem .contentMainMenuDetailItem .headerContentMainMenuDetailItem:hover,
+.mcategoryMenu .leftCategory.menu.selected .mainMenuDetailItem .detailContentMainMenuDetailItem:hover
+{
+    color: #ff6600;
+}
+
+
+.categoryFixedBackground
+{
+    position: fixed;
+    top: 57px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+    z-index: 10;
+}
+.categoryFixedCont
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 459px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media screen and (max-width: 1100px)
+{
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .headerMainMenuDetailItem
+    {
+        padding-bottom: 0px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem .headerContentMainMenuDetailItem
+    {
+        padding-top: 0px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .detailContentMainMenuDetailItem
+    {
+        margin-top: 2px;
+        padding-bottom: 1px;
+    }
+}
+@media screen and (max-width: 1010px)
+{
+    .categoryMenu .leftCategory .menu
+    {
+        padding-top: 6px;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (max-width: 900px) 
+{
+    .categoryFixedCont
+    {
+        height: 400px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem
+    {
+        padding-top: 5px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem
+    {
+        width: 160px;
+    }
+}
+@media screen and (max-width: 800px) 
+{
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem
+    {
+        padding-left: 10px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem 
+    {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 700px) 
+{
+    .categoryFixedCont
+    {
+        height: 380px;
+    }
+}
+.categoryFixedBackground .categoryMenu
+{
+    height: 100%;
+    border: 0;
+    text-align: left;
+    cursor: default;
+}
+.categoryFixedBackground .categoryMenu .leftCategoryOutside
+{
+    border: 0;
+    background-color: #fff;
+}
+.categoryFixedBackground.showMenu.hideOnTop
+{
+    display: none;
+}
+.categoryFixedBackground.showMenu:not(.hideOnTop)
+{
+    display: block;
+}
+
+/* Iqbal */
+
+.editIconMerk
+{
+    display:none;
+    width: 50%;
+    float: right;
+    /* height: 37px; */
+    right: 30%;
+    top: 0;
+    bottom: 0;
+}
+.editIconMerk .btnEditIconMErk
+{
+    position:absolute;
+    top: 10px;
+    box-shadow: 0px 0px 4px 1px rgba(102,102,102,0.5);
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10pt;
+    max-width:100px;
+    width:100%;
+    left: 70%;
+}
+.editIconMerk .btnEditIconMErk:hover
+{
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.editIconMerk .btnEditIconMErk:active
+{
+    background-color: gray;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+}
+.dcaptionFloorCategory:hover .editIconMerk
+{
+    display:block;
+}

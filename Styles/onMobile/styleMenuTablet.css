@@ -1,0 +1,61 @@
+﻿.categoryMenu .leftCategory .menu
+{
+    font-size: 9pt;
+    letter-spacing: 1px;
+}
+
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .headerMainMenuDetailItem
+{
+    font-size: 9pt;
+    padding-bottom: 2px;
+}
+
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem
+{
+    width: 180px;
+    padding-top: 1px;
+}
+
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .detailContentMainMenuDetailItem
+{
+    margin-top: 2px;
+    margin-left: 8px;
+    padding-left: 8px;
+    width: 160px;
+    font-size: 9pt;
+}
+
+.categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem .headerContentMainMenuDetailItem {
+    width: 180px;
+    font-size: 9pt;
+}
+@media screen and (max-width: 900px) 
+{
+    .categoryFixedCont
+    {
+        height: 400px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem
+    {
+        padding-top: 5px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem
+    {
+        width: 160px;
+    }
+}
+@media screen and (max-width: 800px) 
+{
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem
+    {
+        padding-left: 10px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .contentMainMenuDetailItem 
+    {
+        width: 150px;
+    }
+    .categoryMenu .leftCategory .menu:hover .mainMenuDetailItem .detailContentMainMenuDetailItem
+    {
+        margin-top: 0px;
+    }
+}

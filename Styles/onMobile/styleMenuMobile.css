@@ -1,0 +1,144 @@
+﻿.mcontentContainer.fixed.show .mcategoryMenu
+{
+    width:100%;
+    height:auto;
+    margin:0px;
+    font-size:14px;
+    padding-right:10px;
+    font-size:12px;
+}
+
+
+.mcategoryMenu
+{
+    width:100%;
+    height:auto;
+    margin:0px;
+    font-size:14px;
+    padding-right:10px;
+    font-size:12px;
+}
+.mcategoryMenu .btnCloseMenu
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    display:block;
+    color: #FFF;
+    z-index: 12;
+    font-weight: bold;
+    padding: 5px;
+    padding-bottom: 4px;
+    padding-top: 4px; 
+}
+.mcategoryMenu .btnCloseMenu:hover
+{
+    background-color: #FFF;
+    color:#f67500;
+    cursor: pointer;
+}
+.mcontentContainer .mcategoryMenu .leftCategory
+{
+    float:left;
+    width:100%;
+    height:100%;
+    border-top:25px solid #f67500;
+    border-right:2px solid #f67500;
+    border-bottom:2px solid #f67500;    
+    border-left:2px solid #f67500;
+    margin-left:0px;
+    margin-top:0px;
+    background: #fff;
+    box-shadow: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:11;
+    font-size: 11pt;
+}
+.mcontentContainer.fixed .mcategoryMenu .leftCategory
+{
+    float:left;
+    width:100%;
+    height:100%;
+    border-top:25px solid #f67500;
+    border-right:2px solid #f67500;
+    border-bottom:2px solid #f67500;    
+    border-left:2px solid #f67500;
+    margin-left:0px;
+    margin-top:0px;
+    background: #fff;
+    box-shadow: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:11;
+}
+.mcategoryMenu .leftCategory a
+{
+    padding: 0px 0px 0px 0px;
+    width:100%;
+    display:list-item;
+    list-style:none;
+    background-position:left center;
+    background-repeat: no-repeat;
+    padding-bottom:5px;
+    margin-left:0px;
+    background-position:15px center;
+}
+.mcategoryMenu .leftCategory a:hover
+{
+    background-color:#EEE;
+    color:#f67500;
+}
+    
+a.menu1
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-fashion.png');
+}
+a.menu2
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-gadget.png');
+}
+a.menu3
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-buku-peralatan-kantor.png');
+}
+a.menu4
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-alat-rumah-tangga.png');
+}
+a.menu5
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-kecantikan.png');
+}
+a.menu6
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-mainan-anak.png');
+}
+a.menu7
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-olahraga-hobi.png');
+}
+a.menu8
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-otomotif-industri.png');
+}
+a.menu9
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-makanan-minuman.png');
+}
+a.menu10
+{
+    background-image: url('../../images/newDesign/ICON kategori utama/icon-musik-game.png');
+}
+
+@media screen and (max-width: 325px)
+{
+    .mcategoryMenu .btnCloseMenu
+    {
+        top: 0px;
+    }
+}
